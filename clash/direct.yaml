@@ -56,8 +56,6 @@ payload:
   - DOMAIN-SUFFIX,biligame.com
   - DOMAIN-SUFFIX,bilibiliyoo.com
   #> C
-  ## 财新网
-  - DOMAIN-SUFFIX,caixin.com
   ## 彩云天气
   - DOMAIN-SUFFIX,caiyunapp.com
   #> D
@@ -69,7 +67,7 @@ payload:
   ## 东方财富
   - DOMAIN-SUFFIX,dfcfw.com
   - DOMAIN-SUFFIX,eastmoney.com
-  - DOMAIN-KEYWORD,1234567.com.cn
+  - DOMAIN-SUFFIX,1234567.com.cn
   ## 豆瓣
   - DOMAIN-SUFFIX,douban.com
   - DOMAIN-SUFFIX,doubanio.com
@@ -127,7 +125,6 @@ payload:
   - DOMAIN-SUFFIX,kaolafm.com
   - DOMAIN-SUFFIX,kaolafm.net
   ## 快手
-  - PROCESS-NAME,kwai-ios*
   - DOMAIN-SUFFIX,yximgs.com
   #> L
   ## 荔枝FM
@@ -176,7 +173,6 @@ payload:
   ## 苏宁易购
   - DOMAIN-SUFFIX,suning.com
   ## 随手记
-  - PROCESS-NAME,MyMoney*
   - DOMAIN-SUFFIX,feidee.com
   - DOMAIN-SUFFIX,feidee.net
   #> T
@@ -185,22 +181,15 @@ payload:
   ## Typlog
   - DOMAIN-SUFFIX,typlog.com
   ## 腾讯
-  - PROCESS-NAME,MicroMessenger*
-  - PROCESS-NAME,WeChat*
-  - PROCESS-NAME,QQMusic*
   - DOMAIN-SUFFIX,qq.com
   - DOMAIN-SUFFIX,tenpay.com
   - DOMAIN-SUFFIX,qcloud.com
   - DOMAIN-SUFFIX,myqcloud.com
   - DOMAIN-SUFFIX,gtimg.com
   - DOMAIN-SUFFIX,wechat.com
-  - DOMAIN-KEYWORD,om.tc.qq.com
-  - DOMAIN-KEYWORD,music.tc.qq.com
   #> U
   #> V
   #> W
-  ## WEB VIEW
-  - DOMAIN-SUFFIX,webview.tech
   ## WiFi万能钥匙
   - DOMAIN-SUFFIX,51y5.net
   ## 网宿CDN
@@ -222,16 +211,13 @@ payload:
   ## 喜马拉雅
   - DOMAIN-SUFFIX,ximalaya.com
   - DOMAIN-SUFFIX,xmcdn.com
-  - DOMAIN-KEYWORD,xmcdn.com
   ## 下厨房
   - DOMAIN-SUFFIX,xiachufang.com
   - DOMAIN-SUFFIX,chuimg.com
   ## 小红书
-  - DOMAIN-SUFFIX,xhscdn.com
   - DOMAIN-SUFFIX,xiaohongshu.com
+  - DOMAIN-SUFFIX,xhscdn.com
   ## 小米
-  - PROCESS-NAME,MiFit*
-  - DOMAIN-SUFFIX,huami.com
   - DOMAIN-SUFFIX,mi.com
   - DOMAIN-SUFFIX,miui.com
   - DOMAIN-SUFFIX,miwifi.com
@@ -267,7 +253,6 @@ payload:
   - DOMAIN-SUFFIX,psbc.com
   #> Z
   ## 字节跳动
-  - PROCESS-NAME,Aweme*
   - DOMAIN-SUFFIX,byteimg.com
   - DOMAIN-SUFFIX,douyin.com
   - DOMAIN-SUFFIX,douyincdn.com
@@ -281,7 +266,6 @@ payload:
   - DOMAIN-SUFFIX,zhihu.com
   - DOMAIN-SUFFIX,zhimg.com
   ## 中国联通
-  - PROCESS-NAME,ChinaUnicom*
   - DOMAIN-SUFFIX,10010.com
   ## 中国移动
   - DOMAIN-SUFFIX,cmiotcd.com
