@@ -13,7 +13,6 @@ payload:
   ## CCCAT
   - DOMAIN-SUFFIX,cccat.io
   ## Clubhouse
-  - PROCESS-NAME,Clubhouse*
   - DOMAIN-SUFFIX,clubhouseapi.com
   - DOMAIN-SUFFIX,join.club
   - DOMAIN-SUFFIX,joinclubhouse.com
@@ -103,8 +102,6 @@ payload:
   - DOMAIN-SUFFIX,protonmail.com
   - DOMAIN-SUFFIX,protonmail.ch
   #> Q
-  ## QKL123
-  - DOMAIN-SUFFIX,qkl123.com
   #> R
   #> S
   ## Spark
