@@ -129,6 +129,7 @@ payload:
   ## TradingView
   - DOMAIN-SUFFIX,tradingview.com
   ## Twitter
+  - DOMAIN-SUFFIX,x.com
   - DOMAIN-SUFFIX,twitter.com
   - DOMAIN-SUFFIX,twimg.com
   - DOMAIN-SUFFIX,t.co
