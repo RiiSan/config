@@ -55,8 +55,6 @@ DOMAIN-SUFFIX,hdslb.net
 DOMAIN-SUFFIX,biligame.com
 DOMAIN-SUFFIX,bilibiliyoo.com
 #> C
-## 财新网
-DOMAIN-SUFFIX,caixin.com
 ## 彩云天气
 DOMAIN-SUFFIX,caiyunapp.com
 #> D
@@ -68,7 +66,7 @@ DOMAIN-SUFFIX,didistatic.com
 ## 东方财富
 DOMAIN-SUFFIX,dfcfw.com
 DOMAIN-SUFFIX,eastmoney.com
-URL-REGEX,1234567.com.cn
+DOMAIN-SUFFIX,1234567.com.cn
 ## 豆瓣
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,doubanio.com
@@ -193,13 +191,9 @@ DOMAIN-SUFFIX,qcloud.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,gtimg.com
 DOMAIN-SUFFIX,wechat.com
-URL-REGEX,om.tc.qq.com
-URL-REGEX,music.tc.qq.com
 #> U
 #> V
 #> W
-## WEB VIEW
-DOMAIN-SUFFIX,webview.tech
 ## WiFi万能钥匙
 DOMAIN-SUFFIX,51y5.net
 ## 网宿CDN
@@ -221,16 +215,13 @@ DOMAIN-SUFFIX,weibocdn.com
 ## 喜马拉雅
 DOMAIN-SUFFIX,ximalaya.com
 DOMAIN-SUFFIX,xmcdn.com
-URL-REGEX,xmcdn.com
 ## 下厨房
 DOMAIN-SUFFIX,xiachufang.com
 DOMAIN-SUFFIX,chuimg.com
 ## 小红书
-DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,xhscdn.com
 ## 小米
-USER-AGENT,MiFit*
-DOMAIN-SUFFIX,huami.com
 DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,miwifi.com
