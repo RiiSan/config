@@ -36,4 +36,3 @@ payload:
   - DOMAIN-SUFFIX,lcdn-registration.apple.com
   - DOMAIN-SUFFIX,ls.apple.com
   - PROCESS-NAME,trustd
-  
