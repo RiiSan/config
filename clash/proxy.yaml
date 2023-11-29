@@ -67,6 +67,11 @@ payload:
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,fbcdn.net
   #> J
+  ## Jable.TV
+  - DOMAIN-SUFFIX,jable.tv
+  ## JavDB
+  - DOMAIN-SUFFIX,javdb.com
+  - DOMAIN-SUFFIX,jdbstatic.com
   #> K
   #> L
   #> M
