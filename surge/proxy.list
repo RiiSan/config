@@ -88,12 +88,12 @@ DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,nflxvideo.net
 DOMAIN-SUFFIX,fast.com
-## 纽约时报
-DOMAIN-SUFFIX,nytimes.com
-DOMAIN-SUFFIX,nyt.com
 ## Notion
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,notion.site
+## 纽约时报
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,nyt.com
 #> O
 ## OpenAI
 DOMAIN-SUFFIX,openai.com
