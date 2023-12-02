@@ -52,11 +52,12 @@ payload:
   - DOMAIN-SUFFIX,xzcs3zlph.com
   ## 哔哩哔哩
   - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,bilibiliyoo.com
+  - DOMAIN-SUFFIX,bilicomics.com
+  - DOMAIN-SUFFIX,biligame.com
   - DOMAIN-SUFFIX,bilivideo.com
   - DOMAIN-SUFFIX,hdslb.com
   - DOMAIN-SUFFIX,hdslb.net
-  - DOMAIN-SUFFIX,biligame.com
-  - DOMAIN-SUFFIX,bilibiliyoo.com
   #> C
   ## 彩云天气
   - DOMAIN-SUFFIX,caiyunapp.com
