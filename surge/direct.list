@@ -32,8 +32,8 @@ DOMAIN-SUFFIX,qy.net
 #> B
 ## 百度
 DOMAIN-SUFFIX,baidu.com
-DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,bdstatic.com
 ## 哔嘀影视
 DOMAIN-SUFFIX,bdys.me
@@ -69,9 +69,9 @@ DOMAIN-SUFFIX,dida365.com
 DOMAIN-SUFFIX,xiaojukeji.com
 DOMAIN-SUFFIX,didistatic.com
 ## 东方财富
-DOMAIN-SUFFIX,dfcfw.com
 DOMAIN-SUFFIX,eastmoney.com
 DOMAIN-SUFFIX,1234567.com.cn
+DOMAIN-SUFFIX,dfcfw.com
 ## 豆瓣
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,doubanio.com
@@ -98,9 +98,9 @@ DOMAIN-SUFFIX,95508.com
 DOMAIN-SUFFIX,gtja.com
 #> H
 ## 华为
+DOMAIN-SUFFIX,huawei.com
 DOMAIN-SUFFIX,dbankcdn.com
 DOMAIN-SUFFIX,hicloud.com
-DOMAIN-SUFFIX,huawei.com
 DOMAIN-SUFFIX,vmall.com
 DOMAIN-SUFFIX,vmallres.com
 #> I
@@ -121,9 +121,9 @@ DOMAIN-SUFFIX,daopub.com
 DOMAIN-SUFFIX,jinse.com
 ## 京东
 DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,jdcloud.com
 DOMAIN-SUFFIX,jingxi.com
-DOMAIN-SUFFIX,360buyimg.com
 ## 九江银行
 DOMAIN-SUFFIX,jjccb.com
 #> K
@@ -156,11 +156,14 @@ DOMAIN-SUFFIX,yangkeduo.com
 DOMAIN-SUFFIX,pingan.com
 #> Q
 ## 七牛云
+DOMAIN-SUFFIX,qiniu.com
+DOMAIN-SUFFIX,clouddn.com
 DOMAIN-SUFFIX,qbox.me
+DOMAIN-SUFFIX,qiniu.io
 DOMAIN-SUFFIX,qiniucdn.com
 DOMAIN-SUFFIX,qiniudn.com
+DOMAIN-SUFFIX,qiniudns.com
 DOMAIN-SUFFIX,qnqcdn.net
-DOMAIN-SUFFIX,clouddn.com
 #> R
 ## 瑞幸咖啡
 DOMAIN-SUFFIX,luckincoffee.com
@@ -193,10 +196,10 @@ USER-AGENT,MicroMessenger*
 USER-AGENT,WeChat*
 USER-AGENT,QQMusic*
 DOMAIN-SUFFIX,qq.com
-DOMAIN-SUFFIX,tenpay.com
-DOMAIN-SUFFIX,qcloud.com
-DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,wechat.com
 #> U
 #> V
@@ -230,16 +233,16 @@ DOMAIN-SUFFIX,xiaohongshu.com
 DOMAIN-SUFFIX,xhscdn.com
 ## 小米
 DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,mi-img.com
 DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,miwifi.com
-DOMAIN-SUFFIX,mi-img.com
 DOMAIN-SUFFIX,xiaomi.com
 DOMAIN-SUFFIX,xiaomi.net
 DOMAIN-SUFFIX,xiaomiyoupin.com
 ## 小宇宙
 DOMAIN-SUFFIX,xiaoyuzhoufm.com
-DOMAIN-SUFFIX,xyzcdn.net
 DOMAIN-SUFFIX,getpodcast.xyz
+DOMAIN-SUFFIX,xyzcdn.net
 ## 小众软件
 DOMAIN-SUFFIX,appinn.com
 DOMAIN-SUFFIX,appinn.net
@@ -266,12 +269,12 @@ DOMAIN-SUFFIX,psbc.com
 #> Z
 ## 字节跳动
 USER-AGENT,Aweme*
-DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,douyincdn.com
-DOMAIN-SUFFIX,douyinvod.com
-DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvod.com
 ## 招商银行
 DOMAIN-SUFFIX,cmbchina.com
 DOMAIN-SUFFIX,cmbimg.com
