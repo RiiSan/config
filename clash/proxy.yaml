@@ -91,6 +91,9 @@ payload:
   ## Notion
   - DOMAIN-SUFFIX,notion.so
   - DOMAIN-SUFFIX,notion.site
+  ## 纽约时报
+  - DOMAIN-SUFFIX,nytimes.com
+  - DOMAIN-SUFFIX,nyt.com
   #> O
   ## OpenAI
   - DOMAIN-SUFFIX,openai.com
