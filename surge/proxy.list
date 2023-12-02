@@ -78,6 +78,7 @@ DOMAIN-SUFFIX,jdbstatic.com
 ## Microsoft
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,copilot.microsoft.com
 ## Mozilla Firefox
 DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,mozilla.com
