@@ -32,6 +32,11 @@ payload:
   - DOMAIN-SUFFIX,dropboxstatic.com
   ## 独播库
   - DOMAIN-SUFFIX,duboku.tv
+  - DOMAIN-SUFFIX,duboku.co
+  - DOMAIN-SUFFIX,duboku.com
+  - DOMAIN-SUFFIX,duboku.fun
+  - DOMAIN-SUFFIX,duboku.io
+  - DOMAIN-SUFFIX,duboku.net
   - DOMAIN-SUFFIX,bokux.com
   - DOMAIN-SUFFIX,cboku.com
   - DOMAIN-SUFFIX,gboku.com
