@@ -88,7 +88,9 @@ DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,edge.microsoft.com
 ## Mozilla Firefox
 DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,mozilla.com
