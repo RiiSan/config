@@ -19,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,aliyundrive.com
   - DOMAIN-SUFFIX,cainiao.com
   - DOMAIN-SUFFIX,etao.com
+  - DOMAIN-SUFFIX,mmstat.com
   - DOMAIN-SUFFIX,taobao.com
   - DOMAIN-SUFFIX,tmall.com
   - DOMAIN-SUFFIX,tmall.hk
@@ -123,8 +124,14 @@ payload:
   # 京东
   - DOMAIN-SUFFIX,jd.com
   - DOMAIN-SUFFIX,360buyimg.com
+  - DOMAIN-SUFFIX,healthjd.com
+  - DOMAIN-SUFFIX,jd.hk
   - DOMAIN-SUFFIX,jdcloud.com
+  - DOMAIN-SUFFIX,jddj.com
+  - DOMAIN-SUFFIX,jdl.com
+  - DOMAIN-SUFFIX,jingdong.com
   - DOMAIN-SUFFIX,jingxi.com
+  - DOMAIN-SUFFIX,yiyaojd.com
   # 九江银行
   - DOMAIN-SUFFIX,jjccb.com
   # K
