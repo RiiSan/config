@@ -1,36 +1,36 @@
 # Proxy List
 payload:
-  #> A
-  ## ADSLCloud
+  # A
+  # ADSLCloud
   - DOMAIN-SUFFIX,adsl.cloud
-  ## AICoin
+  # AICoin
   - DOMAIN-SUFFIX,aicoin.com
-  #> B
-  ## Bitwarden
+  # B
+  # Bitwarden
   - DOMAIN-SUFFIX,bitwarden.com
   - DOMAIN-SUFFIX,bitwarden.net
-  #> C
-  ## CCCAT
+  # C
+  # CCCAT
   - DOMAIN-SUFFIX,cccat.io
-  ## Clubhouse
+  # Clubhouse
   - DOMAIN-SUFFIX,clubhouseapi.com
   - DOMAIN-SUFFIX,join.club
   - DOMAIN-SUFFIX,joinclubhouse.com
   - DOMAIN,clubhouseprod.s3.amazonaws.com
-  ## CoinGecko
+  # CoinGecko
   - DOMAIN-SUFFIX,coingecko.com
-  ## CoinMarketCap
+  # CoinMarketCap
   - DOMAIN-SUFFIX,coinmarketcap.com
-  ## CroLAX
+  # CroLAX
   - DOMAIN-SUFFIX,2000w.xyz
-  #> D
-  ## DeepL
+  # D
+  # DeepL
   - DOMAIN-SUFFIX,deepl.com
-  ## Dropbox
+  # Dropbox
   - DOMAIN-SUFFIX,dropbox.com
   - DOMAIN-SUFFIX,dropboxapi.com
   - DOMAIN-SUFFIX,dropboxstatic.com
-  ## 独播库
+  # 独播库
   - DOMAIN-SUFFIX,duboku.tv
   - DOMAIN-SUFFIX,duboku.co
   - DOMAIN-SUFFIX,duboku.com
@@ -44,18 +44,18 @@ payload:
   - DOMAIN-SUFFIX,nboku.com
   - DOMAIN-SUFFIX,pboku.com
   - DOMAIN-SUFFIX,uhibo.com
-  ## 端传媒
+  # 端传媒
   - DOMAIN-SUFFIX,theinitium.com
-  #> E
-  #> F
-  #> G
-  ## GitHub
+  # E
+  # F
+  # G
+  # GitHub
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,github.io
   - DOMAIN-SUFFIX,githubapp.com
   - DOMAIN-SUFFIX,githubassets.com
   - DOMAIN-SUFFIX,githubusercontent.com
-  ## Google
+  # Google
   - DOMAIN-KEYWORD,google
   - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,youtu.be
@@ -66,77 +66,77 @@ payload:
   - DOMAIN-SUFFIX,ampproject.org
   - DOMAIN-SUFFIX,ampproject.net
   - DOMAIN-SUFFIX,gmail.com
-  #> H
-  #> I
-  ## Inoreader
+  # H
+  # I
+  # Inoreader
   - DOMAIN-SUFFIX,inoreader.com
-  #> J
-  ## Jable.TV
+  # J
+  # Jable.TV
   - DOMAIN-SUFFIX,jable.tv
-  ## JavDB
+  # JavDB
   - DOMAIN-SUFFIX,javdb.com
   - DOMAIN-SUFFIX,jdbstatic.com
-  #> K
-  #> L
-  #> M
-  ## Meta
+  # K
+  # L
+  # M
+  # Meta
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,instagram.com
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,fbcdn.net
-  ## Microsoft
+  # Microsoft
   - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,bing.net
   - DOMAIN-SUFFIX,bingapis.com
   - DOMAIN-SUFFIX,live.com
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,edge.microsoft.com
-  ## Mozilla Firefox
+  # Mozilla Firefox
   - DOMAIN-SUFFIX,firefox.com
   - DOMAIN-SUFFIX,mozilla.com
   - DOMAIN-SUFFIX,mozilla.net
   - DOMAIN-SUFFIX,mozilla.org
-  #> N
-  ## Netflix
+  # N
+  # Netflix
   - DOMAIN-SUFFIX,netflix.com
   - DOMAIN-SUFFIX,fast.com
   - DOMAIN-SUFFIX,nflxvideo.net
-  ## Notion
+  # Notion
   - DOMAIN-SUFFIX,notion.so
   - DOMAIN-SUFFIX,notion.site
-  ## 纽约时报
+  # 纽约时报
   - DOMAIN-SUFFIX,nytimes.com
   - DOMAIN-SUFFIX,nyt.com
-  #> O
-  ## OpenAI
+  # O
+  # OpenAI
   - DOMAIN-SUFFIX,openai.com
-  ## Overcast
+  # Overcast
   - DOMAIN-SUFFIX,overcast.fm
   - DOMAIN-SUFFIX,overcast-cdn.com
-  ## 欧乐影院
+  # 欧乐影院
   - DOMAIN-SUFFIX,olevod.tv
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,olemovienews.com
-  #> P
+  # P
   # Pocket Casts
   - DOMAIN-SUFFIX,pocketcasts.com
-  ## Pornhub
+  # Pornhub
   - DOMAIN-SUFFIX,pornhub.com
   - DOMAIN-SUFFIX,phncdn.com
-  ## ProtonMail
+  # ProtonMail
   - DOMAIN-SUFFIX,protonmail.com
   - DOMAIN-SUFFIX,protonmail.ch
-  #> Q
-  #> R
-  #> S
-  ## Spark
+  # Q
+  # R
+  # S
+  # Spark
   - DOMAIN-SUFFIX,smartmailcloud.com
-  ## Spotify
+  # Spotify
   - DOMAIN-SUFFIX,spotify.com
   - DOMAIN-SUFFIX,spotifycdn.com
   - DOMAIN-SUFFIX,scdn.co
-  #> T
-  ## Telegram
+  # T
+  # Telegram
   - DOMAIN-SUFFIX,telegram.org
   - DOMAIN-SUFFIX,t.me
   - DOMAIN-SUFFIX,tdesktop.com
@@ -151,33 +151,33 @@ payload:
   - IP-CIDR,109.239.140.0/24,no-resolve
   - IP-CIDR,149.154.160.0/20,no-resolve
   - IP-CIDR,205.172.60.0/22,no-resolve
-  ## TradingView
+  # TradingView
   - DOMAIN-SUFFIX,tradingview.com
-  ## Twitter
+  # Twitter
   - DOMAIN-SUFFIX,x.com
   - DOMAIN-SUFFIX,twitter.com
   - DOMAIN-SUFFIX,pscp.tv
   - DOMAIN-SUFFIX,t.co
   - DOMAIN-SUFFIX,twimg.com
-  #> U
-  #> V
-  ## VOA
+  # U
+  # V
+  # VOA
   - DOMAIN-SUFFIX,voanews.com
   - DOMAIN-SUFFIX,voachinese.com
-  #> W
-  ## Wikipedia
+  # W
+  # Wikipedia
   - DOMAIN-SUFFIX,wikipedia.org
   - DOMAIN-SUFFIX,wikimedia.org
-  #> X
-  ## Xvideos
+  # X
+  # Xvideos
   - DOMAIN-SUFFIX,xvideos.com
   - DOMAIN-SUFFIX,xvideos-cdn.com
-  #> Y
-  #> Z
-  ## 种子搜
+  # Y
+  # Z
+  # 种子搜
   - DOMAIN-SUFFIX,zhongziso.com
   - DOMAIN-SUFFIX,zhongzidi.com
   - DOMAIN-SUFFIX,zhongzilou.com
-  #> #
-  ## 1Password
+  # #
+  # 1Password
   - DOMAIN-SUFFIX,1password.com
