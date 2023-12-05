@@ -82,6 +82,7 @@ payload:
   # Meta
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,threads.net
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,fbcdn.net
   # Microsoft
@@ -91,6 +92,7 @@ payload:
   - DOMAIN-SUFFIX,live.com
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,edge.microsoft.com
+  - DOMAIN,ntp.msn.com
   # Mozilla Firefox
   - DOMAIN-SUFFIX,firefox.com
   - DOMAIN-SUFFIX,mozilla.com
@@ -124,8 +126,10 @@ payload:
   - DOMAIN-SUFFIX,pornhub.com
   - DOMAIN-SUFFIX,phncdn.com
   # ProtonMail
-  - DOMAIN-SUFFIX,protonmail.com
+  - DOMAIN-SUFFIX,proton.me
+  - DOMAIN-SUFFIX,pm.me
   - DOMAIN-SUFFIX,protonmail.ch
+  - DOMAIN-SUFFIX,protonmail.com
   # Q
   # R
   # S
