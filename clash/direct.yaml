@@ -88,8 +88,11 @@ payload:
   - DOMAIN-SUFFIX,fanli.com
   - DOMAIN-SUFFIX,51fanli.net
   # 飞客茶馆
-  - DOMAIN-SUFFIX,flyertea.com
   - DOMAIN-SUFFIX,flyert.com
+  - DOMAIN-SUFFIX,flyertea.com
+  - DOMAIN-SUFFIX,flyertrip.com
+  # 粉笔
+  - DOMAIN-SUFFIX,fenbi.com
   # G
   # 高德地图
   - DOMAIN-SUFFIX,amap.com
