@@ -122,8 +122,6 @@ payload:
   - DOMAIN-SUFFIX,jjldbk.com
   - DOMAIN-SUFFIX,dao.fm
   - DOMAIN-SUFFIX,daopub.com
-  # 金色财经
-  - DOMAIN-SUFFIX,jinse.com
   # 京东
   - DOMAIN-SUFFIX,jd.com
   - DOMAIN-SUFFIX,360buyimg.com
@@ -210,8 +208,6 @@ payload:
   # U
   # V
   # W
-  # WiFi万能钥匙
-  - DOMAIN-SUFFIX,51y5.net
   # 网宿CDN
   - DOMAIN-SUFFIX,wswebcdn.com
   - DOMAIN-SUFFIX,wsglb0.com
