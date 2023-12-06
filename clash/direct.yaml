@@ -74,9 +74,18 @@ payload:
   - DOMAIN-SUFFIX,eastmoney.com
   - DOMAIN-SUFFIX,1234567.com.cn
   - DOMAIN-SUFFIX,dfcfw.com
+  - DOMAIN-SUFFIX,tiantianfunds.com
   # 豆瓣
   - DOMAIN-SUFFIX,douban.com
   - DOMAIN-SUFFIX,doubanio.com
+  # 抖音
+  - DOMAIN-SUFFIX,douyin.com
+  - DOMAIN-SUFFIX,amemv.com
+  - DOMAIN-SUFFIX,byteimg.com
+  - DOMAIN-SUFFIX,douyincdn.com
+  - DOMAIN-SUFFIX,douyinstatic.com
+  - DOMAIN-SUFFIX,douyinvod.com
+  - DOMAIN-SUFFIX,idouyinvod.com
   # E
   # 饿了么
   - DOMAIN-SUFFIX,ele.me
@@ -116,6 +125,8 @@ payload:
   - DOMAIN-SUFFIX,justpodmedia.com
   # 建设银行
   - DOMAIN-SUFFIX,ccb.com
+  # 江西农信
+  - DOMAIN-SUFFIX,jxnxs.com
   # 交通银行
   - DOMAIN-SUFFIX,bankcomm.com
   # 津津乐道
@@ -139,8 +150,6 @@ payload:
   # 考拉FM
   - DOMAIN-SUFFIX,kaolafm.com
   - DOMAIN-SUFFIX,kaolafm.net
-  # 快手
-  - DOMAIN-SUFFIX,yximgs.com
   # L
   # 荔枝FM
   - DOMAIN-SUFFIX,lizhi.fm
@@ -203,6 +212,7 @@ payload:
   - DOMAIN-SUFFIX,gtimg.com
   - DOMAIN-SUFFIX,myqcloud.com
   - DOMAIN-SUFFIX,qcloud.com
+  - DOMAIN-SUFFIX,qqmail.com
   - DOMAIN-SUFFIX,tenpay.com
   - DOMAIN-SUFFIX,wechat.com
   # U
@@ -269,13 +279,6 @@ payload:
   # 邮政储蓄银行
   - DOMAIN-SUFFIX,psbc.com
   # Z
-  # 字节跳动
-  - DOMAIN-SUFFIX,douyin.com
-  - DOMAIN-SUFFIX,amemv.com
-  - DOMAIN-SUFFIX,byteimg.com
-  - DOMAIN-SUFFIX,douyincdn.com
-  - DOMAIN-SUFFIX,douyinstatic.com
-  - DOMAIN-SUFFIX,douyinvod.com
   # 招商银行
   - DOMAIN-SUFFIX,cmbchina.com
   - DOMAIN-SUFFIX,cmbimg.com
@@ -296,6 +299,3 @@ payload:
   # 36氪
   - DOMAIN-SUFFIX,36kr.com
   - DOMAIN-SUFFIX,36krcnd.com
-  # 国内
-  - DOMAIN-KEYWORD,-cn
-  - DOMAIN-SUFFIX,cn

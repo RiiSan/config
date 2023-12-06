@@ -73,9 +73,18 @@ DOMAIN-SUFFIX,didistatic.com
 DOMAIN-SUFFIX,eastmoney.com
 DOMAIN-SUFFIX,1234567.com.cn
 DOMAIN-SUFFIX,dfcfw.com
+DOMAIN-SUFFIX,tiantianfunds.com
 # 豆瓣
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,doubanio.com
+# 抖音
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,idouyinvod.com
 # E
 # 饿了么
 DOMAIN-SUFFIX,ele.me
@@ -115,6 +124,8 @@ DOMAIN-SUFFIX,mushroomtrack.com
 DOMAIN-SUFFIX,justpodmedia.com
 # 建设银行
 DOMAIN-SUFFIX,ccb.com
+# 江西农信
+DOMAIN-SUFFIX,jxnxs.com
 # 交通银行
 DOMAIN-SUFFIX,bankcomm.com
 # 津津乐道
@@ -138,9 +149,6 @@ DOMAIN-SUFFIX,jjccb.com
 # 考拉FM
 DOMAIN-SUFFIX,kaolafm.com
 DOMAIN-SUFFIX,kaolafm.net
-# 快手
-USER-AGENT,kwai-ios*
-DOMAIN-SUFFIX,yximgs.com
 # L
 # 荔枝FM
 DOMAIN-SUFFIX,lizhi.fm
@@ -191,7 +199,6 @@ DOMAIN-SUFFIX,sf-express.com
 # 苏宁易购
 DOMAIN-SUFFIX,suning.com
 # 随手记
-USER-AGENT,MyMoney*
 DOMAIN-SUFFIX,feidee.com
 DOMAIN-SUFFIX,feidee.net
 # T
@@ -200,13 +207,11 @@ DOMAIN-SUFFIX,weather.com
 # Typlog
 DOMAIN-SUFFIX,typlog.com
 # 腾讯
-USER-AGENT,MicroMessenger*
-USER-AGENT,WeChat*
-USER-AGENT,QQMusic*
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,gtimg.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,qqmail.com
 DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,wechat.com
 # U
@@ -273,14 +278,6 @@ DOMAIN-SUFFIX,upaiyun.com
 # 邮政储蓄银行
 DOMAIN-SUFFIX,psbc.com
 # Z
-# 字节跳动
-USER-AGENT,Aweme*
-DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,byteimg.com
-DOMAIN-SUFFIX,douyincdn.com
-DOMAIN-SUFFIX,douyinstatic.com
-DOMAIN-SUFFIX,douyinvod.com
 # 招商银行
 DOMAIN-SUFFIX,cmbchina.com
 DOMAIN-SUFFIX,cmbimg.com
@@ -288,7 +285,6 @@ DOMAIN-SUFFIX,cmbimg.com
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
 # 中国联通
-USER-AGENT,ChinaUnicom*
 DOMAIN-SUFFIX,10010.com
 # 中国移动
 DOMAIN-SUFFIX,cmiotcd.com
@@ -302,6 +298,3 @@ DOMAIN-SUFFIX,ecitic.com
 # 36氪
 DOMAIN-SUFFIX,36kr.com
 DOMAIN-SUFFIX,36krcnd.com
-# 国内
-DOMAIN-KEYWORD,-cn
-DOMAIN-SUFFIX,cn
