@@ -86,6 +86,7 @@ payload:
   - DOMAIN-SUFFIX,douyinstatic.com
   - DOMAIN-SUFFIX,douyinvod.com
   - DOMAIN-SUFFIX,idouyinvod.com
+  - DOMAIN-SUFFIX,supercachenet.com
   # E
   # 饿了么
   - DOMAIN-SUFFIX,ele.me
