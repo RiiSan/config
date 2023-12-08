@@ -56,16 +56,23 @@ payload:
   - DOMAIN-SUFFIX,githubassets.com
   - DOMAIN-SUFFIX,githubusercontent.com
   # Google
-  - DOMAIN-KEYWORD,google
+  - DOMAIN-SUFFIX,google.com
   - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,ampproject.com
+  - DOMAIN-SUFFIX,ampproject.net
+  - DOMAIN-SUFFIX,ampproject.org
   - DOMAIN-SUFFIX,ggpht.com
-  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,gmail.com
+  - DOMAIN-SUFFIX,goo.gl
+  - DOMAIN-SUFFIX,google.co.jp
+  - DOMAIN-SUFFIX,google.com.hk
+  - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,gvt1.com
   - DOMAIN-SUFFIX,gvt2.com
-  - DOMAIN-SUFFIX,ampproject.org
-  - DOMAIN-SUFFIX,ampproject.net
-  - DOMAIN-SUFFIX,gmail.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,ytimg.com
   # H
   # I
   # Inoreader
