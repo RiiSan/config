@@ -12,7 +12,6 @@ DOMAIN-SUFFIX,bitwarden.net
 # CCCAT
 DOMAIN-SUFFIX,cccat.io
 # Clubhouse
-USER-AGENT,Clubhouse*
 DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,join.club
 DOMAIN-SUFFIX,joinclubhouse.com
