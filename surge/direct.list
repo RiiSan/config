@@ -104,6 +104,8 @@ DOMAIN-SUFFIX,flyertrip.com
 # 粉笔
 DOMAIN-SUFFIX,fenbi.com
 # G
+# Google
+DOMAIN,fonts.gstatic.com
 # 高德地图
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,autonavi.com

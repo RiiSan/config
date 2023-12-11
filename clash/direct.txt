@@ -104,6 +104,8 @@
 # 粉笔
 +.fenbi.com
 # G
+# Google
+fonts.gstatic.com
 # 高德地图
 +.amap.com
 +.autonavi.com
