@@ -176,6 +176,7 @@ payload:
   # U
   # V
   # Vercel
+  - DOMAIN-SUFFIX,vercel.com
   - DOMAIN-SUFFIX,vercel.app
   # VOA
   - DOMAIN-SUFFIX,voanews.com
