@@ -4,6 +4,14 @@
 DOMAIN-SUFFIX,adsl.cloud
 # AICoin
 DOMAIN-SUFFIX,aicoin.com
+# Apple
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,itun.es
+DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,macappsto.re
+DOMAIN-SUFFIX,me.com
 # B
 # Bitwarden
 DOMAIN-SUFFIX,bitwarden.com
