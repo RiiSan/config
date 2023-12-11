@@ -175,6 +175,8 @@ payload:
   - DOMAIN-SUFFIX,twimg.com
   # U
   # V
+  # Vercel
+  - DOMAIN-SUFFIX,vercel.app
   # VOA
   - DOMAIN-SUFFIX,voanews.com
   - DOMAIN-SUFFIX,voachinese.com
