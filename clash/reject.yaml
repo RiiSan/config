@@ -1,0 +1,6 @@
+# Reject List
+payload:
+  # iAd SDK
+  - DOMAIN-SUFFIX,iadsdk.apple.com
+  # DoubleClick
+  - DOMAIN-SUFFIX,doubleclick.net
