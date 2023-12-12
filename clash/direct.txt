@@ -1,5 +1,4 @@
 # Direct List
-+.cn
 # A
 # AccuWeather
 +.accuweather.com
@@ -7,36 +6,7 @@
 # Anyway.FM
 +.anyway.fm
 +.anw.red
-# 阿里
-+.alibaba.com
-+.aliapp.org
-+.alibabausercontent.com
-+.alicdn.com
-+.alipay.com
-+.alipayobjects.com
-+.aliyun.com
-+.aliyuncs.com
-+.aliyundrive.com
-+.cainiao.com
-+.etao.com
-+.mmstat.com
-+.taobao.com
-+.tmall.com
-+.tmall.hk
-# 爱范儿
-+.ifanr.com
-+.ifanrusercontent.com
-+.ifanrx.com
-# 爱奇艺
-+.iqiyi.com
-+.iqiyipic.com
-+.qy.net
 # B
-# 百度
-+.baidu.com
-+.baidupcs.com
-+.bdimg.com
-+.bdstatic.com
 # 哔嘀影视
 +.bdys.me
 +.bde4.cc
@@ -53,45 +23,9 @@
 +.toutiao50.com
 +.tripcdn.com
 +.xzcs3zlph.com
-# 哔哩哔哩
-+.bilibili.com
-+.bilibiliyoo.com
-+.bilicomics.com
-+.biligame.com
-+.biliimg.com
-+.bilivideo.com
-+.hdslb.com
-+.hdslb.net
 # C
-# 彩云天气
-+.caiyunapp.com
 # D
-# 滴答清单
-+.dida365.com
-# 滴滴
-+.xiaojukeji.com
-+.didistatic.com
-# 东方财富
-+.eastmoney.com
-+.1234567.com.cn
-+.dfcfw.com
-+.tiantianfunds.com
-# 豆瓣
-+.douban.com
-+.doubanio.com
-# 抖音
-+.douyin.com
-+.amemv.com
-+.byteimg.com
-+.douyincdn.com
-+.douyinstatic.com
-+.douyinvod.com
-+.idouyinvod.com
-+.supercachenet.com
 # E
-# 饿了么
-+.ele.me
-+.elemecdn.com
 # F
 # Fireside
 +.fireside.fm
@@ -107,154 +41,49 @@
 # G
 # Google
 fonts.gstatic.com
-# 高德地图
-+.amap.com
-+.autonavi.com
-# 广发银行
-+.95508.com
-# 国泰君安
-+.gtja.com
 # H
-# 华为
-+.huawei.com
-+.dbankcdn.com
-+.hicloud.com
-+.vmall.com
-+.vmallres.com
 # I
 # J
 # Jable.TV Streaming
 +.mushroomtrack.com
 # JustPod
 +.justpodmedia.com
-# 建设银行
-+.ccb.com
 # 江西农信
 +.jxnxs.com
-# 交通银行
-+.bankcomm.com
 # 津津乐道
 +.jjldbk.com
 +.dao.fm
 +.daopub.com
-# 京东
-+.jd.com
-+.360buyimg.com
-+.healthjd.com
-+.jd.hk
-+.jdcloud.com
-+.jddj.com
-+.jdl.com
-+.jingdong.com
-+.jingxi.com
-+.yiyaojd.com
 # 九江银行
 +.jjccb.com
 # K
-# 考拉FM
-+.kaolafm.com
-+.kaolafm.net
 # L
-# 荔枝FM
-+.lizhi.fm
 # M
 # Monotype
 +.fonts.com
 +.fonts.net
-# 美团点评
-+.meituan.com
-+.meituan.net
-+.dpfile.com
-+.dianping.com
 # N
 # O
 # P
-# 拼多多
-+.pinduoduo.com
-+.pddpic.com
-+.yangkeduo.com
-# 平安银行
-+.pingan.com
 # Q
-# 七牛云
-+.qiniu.com
-+.clouddn.com
-+.qbox.me
-+.qiniu.io
-+.qiniucdn.com
-+.qiniudn.com
-+.qiniudns.com
-+.qnqcdn.net
 # R
 # 瑞幸咖啡
 +.luckincoffee.com
 +.luckincoffeecdn.com
 +.lkcoffee.com
 # S
-# 少数派
-+.sspai.com
-# 什么值得买
-+.smzdm.com
-+.zdmimg.com
 # 声湃
 +.wav.pub
 +.wavpub.com
-# 顺丰
-+.sf-express.com
-# 苏宁易购
-+.suning.com
-# 随手记
-+.feidee.com
-+.feidee.net
 # T
 # The Weather Channel
 +.weather.com
 # Typlog
 +.typlog.com
-# 腾讯
-+.qq.com
-+.gtimg.com
-+.myqcloud.com
-+.qcloud.com
-+.qqmail.com
-+.tenpay.com
-+.wechat.com
 # U
 # V
 # W
-# 网宿CDN
-+.wswebcdn.com
-+.wsglb0.com
-# 网易
-+.163.com
-+.126.net
-+.127.net
-+.netease.com
-+.qiyukf.com
-+.yeah.net
-+.youdao.com
-# 微博
-+.weibo.com
-+.weibo.cn
-+.weibocdn.com
 # X
-# 喜马拉雅
-+.ximalaya.com
-+.xmcdn.com
-# 下厨房
-+.xiachufang.com
-+.chuimg.com
-# 小红书
-+.xiaohongshu.com
-+.xhscdn.com
-# 小米
-+.mi.com
-+.mi-img.com
-+.miui.com
-+.miwifi.com
-+.xiaomi.com
-+.xiaomi.net
-+.xiaomiyoupin.com
 # 小宇宙
 +.xiaoyuzhoufm.com
 +.getpodcast.xyz
@@ -267,39 +96,7 @@ fonts.gstatic.com
 +.xueqiu.com
 +.imedao.com
 +.rapidssl.com
-# 迅雷
-+.xunlei.com
-+.sandai.net
-+.thunderurl.com
 # Y
 # 异次元软件
 +.iplaysoft.com
-# 优酷
-+.youku.com
-+.soku.com
-+.ykimg.com
-# 又拍云
-+.upaiyun.com
-# 邮政储蓄银行
-+.psbc.com
 # Z
-# 招商银行
-+.cmbchina.com
-+.cmbimg.com
-# 知乎
-+.zhihu.com
-+.zhimg.com
-# 中国联通
-+.10010.com
-# 中国移动
-+.cmiotcd.com
-+.komect.com
-# 中国银联
-+.95516.com
-# 中信银行
-+.citicbank.com
-+.ecitic.com
-# #
-# 36氪
-+.36kr.com
-+.36krcnd.com
