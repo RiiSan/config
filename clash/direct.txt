@@ -100,3 +100,5 @@ fonts.gstatic.com
 # 异次元软件
 +.iplaysoft.com
 # Z
+# CN
++.cn
