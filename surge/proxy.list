@@ -145,6 +145,9 @@ DOMAIN-SUFFIX,smartmailcloud.com
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com
 DOMAIN-SUFFIX,scdn.co
+# Sub Converter
+DOMAIN-SUFFIX,nameless13.com
+DOMAIN-SUFFIX,xeton.dev
 # T
 # Telegram
 DOMAIN-SUFFIX,telegram.org
