@@ -1,0 +1,190 @@
+# Proxy List
+# A
+# ADSLCloud
++.adsl.cloud
+# AICoin
++.aicoin.com
+# B
+# Bitwarden
++.bitwarden.com
++.bitwarden.net
+# C
+# CCCAT
++.cccat.io
+# Clubhouse
++.clubhouseapi.com
++.join.club
++.joinclubhouse.com
+clubhouseprod.s3.amazonaws.com
+# CoinGecko
++.coingecko.com
+# CoinMarketCap
++.coinmarketcap.com
+# CroLAX
++.2000w.xyz
+# D
+# DeepL
++.deepl.com
+# Dropbox
++.dropbox.com
++.dropboxapi.com
++.dropboxstatic.com
+# 独播库
++.duboku.tv
++.duboku.co
++.duboku.com
++.duboku.fun
++.duboku.io
++.duboku.net
++.bokux.com
++.cboku.com
++.gboku.com
++.kboku.com
++.nboku.com
++.pboku.com
++.uhibo.com
+# 端传媒
++.theinitium.com
+# E
+# F
+# G
+# GitHub
++.github.com
++.github.io
++.githubapp.com
++.githubassets.com
++.githubusercontent.com
+# Google
++.google.com
++.youtube.com
++.ampproject.com
++.ampproject.net
++.ampproject.org
++.ggpht.com
++.gmail.com
++.goo.gl
++.google.co.jp
++.google.com.hk
++.googleapis.com
++.googleusercontent.com
++.googlevideo.com
++.gvt1.com
++.gvt2.com
++.youtu.be
++.ytimg.com
+# H
+# I
+# Inoreader
++.inoreader.com
+# J
+# Jable.TV
++.jable.tv
+# JavDB
++.javdb.com
++.jdbstatic.com
+# K
+# L
+# M
+# Meta
++.facebook.com
++.instagram.com
++.threads.net
++.cdninstagram.com
++.fbcdn.net
+# Microsoft
++.bing.com
++.bing.net
++.bingapis.com
++.live.com
+copilot.microsoft.com
+edge.microsoft.com
+ntp.msn.com
+# Mozilla Firefox
++.firefox.com
++.mozilla.com
++.mozilla.net
++.mozilla.org
+# N
+# Netflix
++.netflix.com
++.fast.com
++.nflxvideo.net
+# Notion
++.notion.so
++.notion.site
+# 纽约时报
++.nytimes.com
++.nyt.com
+# O
+# OpenAI
++.openai.com
+# Overcast
++.overcast.fm
++.overcast-cdn.com
+# 欧乐影院
++.olevod.tv
++.olelive.com
++.olemovienews.com
+# P
+# Pocket Casts
++.pocketcasts.com
+# Pornhub
++.pornhub.com
++.phncdn.com
+# ProtonMail
++.proton.me
++.pm.me
++.protonmail.ch
++.protonmail.com
+# Q
+# R
+# S
+# Spark
++.smartmailcloud.com
+# Spotify
++.spotify.com
++.spotifycdn.com
++.scdn.co
+# Sub Converter
++.nameless13.com
++.xeton.dev
+# T
+# Telegram
++.telegram.org
++.t.me
++.tdesktop.com
++.telegra.ph
++.telegram.me
+# TradingView
++.tradingview.com
+# Twitter
++.x.com
++.twitter.com
++.pscp.tv
++.t.co
++.twimg.com
+# U
+# V
+# Vercel
++.vercel.com
++.vercel.app
+# VOA
++.voanews.com
++.voachinese.com
+# W
+# Wikipedia
++.wikipedia.org
++.wikimedia.org
+# X
+# Xvideos
++.xvideos.com
++.xvideos-cdn.com
+# Y
+# Z
+# 种子搜
++.zhongziso.com
++.zhongzidi.com
++.zhongzilou.com
+# #
+# 1Password
++.1password.com
