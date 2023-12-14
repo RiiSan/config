@@ -4,6 +4,14 @@
 +.adsl.cloud
 # AICoin
 +.aicoin.com
+# Apple ID (blackmatrix7)
+appleid.apple.com
+appleid.cdn-apple.com
+gsa.apple.com
+idmsa.apple.com
+# App Store (blackmatrix7)
+apps.apple.com
+itunes.apple.com
 # B
 # Bitwarden
 +.bitwarden.com

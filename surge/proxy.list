@@ -4,6 +4,14 @@
 DOMAIN-SUFFIX,adsl.cloud
 # AICoin
 DOMAIN-SUFFIX,aicoin.com
+# Apple ID (blackmatrix7)
+DOMAIN,appleid.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,gsa.apple.com
+DOMAIN,idmsa.apple.com
+# App Store (blackmatrix7)
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com
 # B
 # Bitwarden
 DOMAIN-SUFFIX,bitwarden.com
