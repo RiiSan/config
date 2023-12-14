@@ -6,6 +6,18 @@ DOMAIN-SUFFIX,weathercn.com
 # Anyway.FM
 DOMAIN-SUFFIX,anyway.fm
 DOMAIN-SUFFIX,anw.red
+# Apple
+DOMAIN-SUFFIX,iosapps.itunes.apple.com
+DOMAIN-SUFFIX,appldnld.apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,time.apple.com
+DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,events-delivery.apple.com
+DOMAIN-SUFFIX,apple-events.akamaized.net
+DOMAIN-SUFFIX,p-events-delivery.akamaized.net
 # B
 # 哔嘀影视
 DOMAIN-SUFFIX,bdys.me

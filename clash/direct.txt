@@ -6,6 +6,18 @@
 # Anyway.FM
 +.anyway.fm
 +.anw.red
+# Apple
++.iosapps.itunes.apple.com
++.appldnld.apple.com
++.cdn-apple.com
++.icloud.com
++.icloud-content.com
++.time.apple.com
++.weather-data.apple.com
++.mzstatic.com
++.events-delivery.apple.com
++.apple-events.akamaized.net
++.p-events-delivery.akamaized.net
 # B
 # 哔嘀影视
 +.bdys.me
