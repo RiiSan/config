@@ -1,4 +1,8 @@
 # Proxy List
+# Config
++.jsdelivr.net
++.nameless13.com
++.xeton.dev
 # A
 # ADSLCloud
 +.adsl.cloud
@@ -98,6 +102,7 @@ clubhouseprod.s3.amazonaws.com
 +.instagram.com
 +.threads.net
 +.cdninstagram.com
++.facebook.net
 +.fbcdn.net
 # Microsoft
 +.bing.com
@@ -147,11 +152,11 @@ ntp.msn.com
 # Q
 # R
 # S
+# Simplenote
++.simplenote.com
++.simperium.com
 # Spark
 +.smartmailcloud.com
-# Sub Converter
-+.nameless13.com
-+.xeton.dev
 # T
 # Telegram
 +.telegram.org

@@ -1,4 +1,8 @@
 # Proxy List
+# Config
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,nameless13.com
+DOMAIN-SUFFIX,xeton.dev
 # A
 # ADSLCloud
 DOMAIN-SUFFIX,adsl.cloud
@@ -98,6 +102,7 @@ DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,threads.net
 DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,fbcdn.net
 # Microsoft
 DOMAIN-SUFFIX,bing.com
@@ -147,11 +152,11 @@ DOMAIN-SUFFIX,protonmail.com
 # Q
 # R
 # S
+# Simplenote
+DOMAIN-SUFFIX,simplenote.com
+DOMAIN-SUFFIX,simperium.com
 # Spark
 DOMAIN-SUFFIX,smartmailcloud.com
-# Sub Converter
-DOMAIN-SUFFIX,nameless13.com
-DOMAIN-SUFFIX,xeton.dev
 # T
 # Telegram
 DOMAIN-SUFFIX,telegram.org
