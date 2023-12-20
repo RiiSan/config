@@ -1,0 +1,9 @@
+#!name=HTTP API
+#!desc=Control Surge with HTTP API
+# iOS 4.4.0+ Mac 4.0.0+
+# YASD (Yet Another Surge Dashboard)
+# http://yasd.nerdynerd.org/
+
+[General]
+http-api = wdbuksvi@0.0.0.0:6171
+http-api-tls = false
