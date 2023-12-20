@@ -1,0 +1,5 @@
+#!name=Wi-Fi Access
+#!desc=Allow Wi-Fi Access
+
+[General]
+allow-wifi-access = true

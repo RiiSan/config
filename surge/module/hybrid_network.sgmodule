@@ -1,0 +1,7 @@
+#!name=Hybrid Network
+#!desc=Set up connections with Wi-Fi and cellular data simultaneously.
+#!system=ios
+
+[General]
+wifi-assist = false
+all-hybrid = true
