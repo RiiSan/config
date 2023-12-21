@@ -1,0 +1,6 @@
+#!name=DoH
+#!desc=DNS over HTTPS
+
+[General]
+dns-server = 8.8.8.8, 1.1.1.1
+encrypted-dns-server = https://doh.pub/dns-query, https://dns.alidns.com/dns-query
