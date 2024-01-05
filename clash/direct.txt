@@ -1,4 +1,4 @@
-# Direct List
+# Direct Ruleset
 # A
 # AccuWeather
 +.accuweather.com

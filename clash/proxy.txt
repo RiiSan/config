@@ -1,4 +1,4 @@
-# Proxy List
+# Proxy Ruleset
 # Config
 +.jsdelivr.net
 +.nameless13.com
