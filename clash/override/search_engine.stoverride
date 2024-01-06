@@ -1,0 +1,12 @@
+#!desc=多重搜索
+#!homepage=
+#!author=RiiSan
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/multisearch.png
+name: Search Engine
+desc: Use Custom Search Engine in Safari
+http:
+  mitm:
+    - "duckduckgo.com"
+  rewrite:
+    - ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+    - ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?hl=zh-CN&safe=off&newwindow=1&q=$1 302
