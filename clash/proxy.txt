@@ -3,7 +3,6 @@
 +.jsdelivr.net
 +.nameless13.com
 +.xeton.dev
-+.xn--6nq44r2uh9rhj7f.com
 # A
 # ADSLCloud
 +.adsl.cloud
@@ -189,6 +188,9 @@ ntp.msn.com
 # Xvideos
 +.xvideos.com
 +.xvideos-cdn.com
+# 性价比机场
++.xn--6nq44r2uh9rhj7f.com
++.xn--xc3ao8r.top
 # Y
 # Z
 # 种子搜

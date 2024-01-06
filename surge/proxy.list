@@ -3,7 +3,6 @@
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,nameless13.com
 DOMAIN-SUFFIX,xeton.dev
-DOMAIN-SUFFIX,xn--6nq44r2uh9rhj7f.com
 # A
 # ADSLCloud
 DOMAIN-SUFFIX,adsl.cloud
@@ -189,6 +188,9 @@ DOMAIN-SUFFIX,wikimedia.org
 # Xvideos
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,xvideos-cdn.com
+# 性价比机场
+DOMAIN-SUFFIX,xn--6nq44r2uh9rhj7f.com
+DOMAIN-SUFFIX,xn--xc3ao8r.top
 # Y
 # Z
 # 种子搜
