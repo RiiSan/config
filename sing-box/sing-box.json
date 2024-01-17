@@ -59,11 +59,11 @@
       },
       {
         "ip_is_private": true,
-        "outbound": "DIRECT"
+        "outbound": "direct"
       },
       {
         "clash_mode": "Direct",
-        "outbound": "DIRECT"
+        "outbound": "direct"
       },
       {
         "clash_mode": "Global",
