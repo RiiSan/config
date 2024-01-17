@@ -79,7 +79,7 @@
       },
       {
         "rule_set": "cn",
-        "outbound": "CN"
+        "outbound": "direct"
       },
       {
         "rule_set": "geolocation-!cn",
@@ -175,10 +175,6 @@
         "HK AUTO"
       ],
       "default": "PROXY"
-    },
-    {
-      "tag": "CN",
-      "type": "direct"
     },
     {
       "tag": "FINAL",
