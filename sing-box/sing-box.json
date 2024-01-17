@@ -14,7 +14,7 @@
       {
         "tag": "tx",
         "address": "https://120.53.53.53/dns-query",
-        "detour": "direct"
+        "detour": "DIRECT"
       },
       {
         "tag": "fakeip",
