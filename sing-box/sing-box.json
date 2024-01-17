@@ -74,6 +74,10 @@
         "outbound": "OPENAI"
       },
       {
+        "rule_set": "spotify",
+        "outbound": "SPOTIFY"
+      },
+      {
         "rule_set": "telegram",
         "outbound": "TELEGRAM"
       },
@@ -109,6 +113,13 @@
         "download_detour": "PROXY"
       },
       {
+        "tag": "spotiy",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/spotify.srs",
+        "download_detour": "PROXY"
+      },
+      {
         "tag": "telegram",
         "type": "remote",
         "format": "binary",
@@ -139,25 +150,6 @@
       "default": "ALL"
     },
     {
-      "tag": "TELEGRAM",
-      "type": "selector",
-      "outbounds": [
-        "PROXY",
-        "ALL",
-        "US",
-        "US AUTO",
-        "JP",
-        "JP AUTO",
-        "SG",
-        "SG AUTO",
-        "TW",
-        "TW AUTO",
-        "HK",
-        "HK AUTO"
-      ],
-      "default": "PROXY"
-    },
-    {
       "tag": "OPENAI",
       "type": "selector",
       "outbounds": [
@@ -177,22 +169,35 @@
       "default": "PROXY"
     },
     {
-      "tag": "FINAL",
+      "tag": "SPOTIFY",
+      "type": "selector",
+      "outbounds": [
+        "US",
+        "US AUTO"
+      ],
+      "default": "US AUTO"
+    },
+    {
+      "tag": "TELEGRAM",
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "DIRECT",
         "ALL",
         "US",
         "US AUTO",
-        "JP",
-        "JP AUTO",
-        "SG",
-        "SG AUTO",
         "TW",
         "TW AUTO",
         "HK",
         "HK AUTO"
+      ],
+      "default": "PROXY"
+    },
+    {
+      "tag": "FINAL",
+      "type": "selector",
+      "outbounds": [
+        "PROXY",
+        "DIRECT"
       ],
       "default": "PROXY"
     },
