@@ -48,7 +48,7 @@
         "server": "tx"
       }
     ],
-    "FINAL": "google",
+    "final": "google",
     "independent_cache": true
   },
   "route": {
