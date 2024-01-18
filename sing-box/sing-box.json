@@ -74,8 +74,12 @@
         "outbound": "OPENAI"
       },
       {
+        "rule_set": "binance",
+        "outbound": "AUTO SG"
+      },
+      {
         "rule_set": "spotify",
-        "outbound": "SPOTIFY"
+        "outbound": "AUTO US"
       },
       {
         "rule_set": "telegram",
@@ -95,35 +99,42 @@
         "tag": "cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/mixed/cn.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/mixed/cn.srs",
         "download_detour": "PROXY"
       },
       {
         "tag": "geolocation-!cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/geolocation-!cn.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "binance",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/binance.srs",
         "download_detour": "PROXY"
       },
       {
         "tag": "openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/openai.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
         "download_detour": "PROXY"
       },
       {
         "tag": "spotify",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/spotify.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
         "download_detour": "PROXY"
       },
       {
         "tag": "telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/mixed/telegram.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/mixed/telegram.srs",
         "download_detour": "PROXY"
       }
     ],
@@ -153,14 +164,6 @@
         "AUTO TW"
       ],
       "default": "PROXY"
-    },
-    {
-      "tag": "SPOTIFY",
-      "type": "selector",
-      "outbounds": [
-        "AUTO US"
-      ],
-      "default": "AUTO US"
     },
     {
       "tag": "TELEGRAM",
