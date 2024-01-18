@@ -135,36 +135,22 @@
       "tag": "PROXY",
       "type": "selector",
       "outbounds": [
-        "ALL",
-        "US",
-        "US AUTO",
-        "JP",
-        "JP AUTO",
-        "SG",
-        "SG AUTO",
-        "TW",
-        "TW AUTO",
-        "HK",
-        "HK AUTO"
+        "AUTO US",
+        "AUTO JP",
+        "AUTO SG",
+        "AUTO TW",
+        "AUTO HK",
+        "WARP"
       ],
-      "default": "ALL"
+      "default": "AUTO US"
     },
     {
       "tag": "OPENAI",
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "ALL",
-        "US",
-        "US AUTO",
-        "JP",
-        "JP AUTO",
-        "SG",
-        "SG AUTO",
-        "TW",
-        "TW AUTO",
-        "HK",
-        "HK AUTO"
+        "AUTO US",
+        "AUTO TW"
       ],
       "default": "PROXY"
     },
@@ -172,112 +158,85 @@
       "tag": "SPOTIFY",
       "type": "selector",
       "outbounds": [
-        "US",
-        "US AUTO"
+        "AUTO US"
       ],
-      "default": "US AUTO"
+      "default": "AUTO US"
     },
     {
       "tag": "TELEGRAM",
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "ALL",
-        "US",
-        "US AUTO",
-        "TW",
-        "TW AUTO",
-        "HK",
-        "HK AUTO"
+        "AUTO US",
+        "AUTO TW"
       ],
       "default": "PROXY"
+    },
+    {
+      "tag": "AUTO US",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO JP",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO SG",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO TW",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO HK",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "WARP",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://1.1.1.1/generate_204",
+      "interval": "5m",
+      "tolerance": 50
     },
     {
       "tag": "FINAL",
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "DIRECT"
+        "DIRECT",
+        "WARP"
       ],
       "default": "PROXY"
-    },
-    {
-      "tag": "ALL",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "US",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "US AUTO",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
-    },
-    {
-      "tag": "JP",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "JP AUTO",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
-    },
-    {
-      "tag": "SG",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "SG AUTO",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
-    },
-    {
-      "tag": "TW",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "TW AUTO",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
-    },
-    {
-      "tag": "HK",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "HK AUTO",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
     },
     {
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
-        "DIRECT",
         "PROXY",
-        "ALL"
+        "DIRECT",
+        "WARP"
       ],
       "default": "DIRECT"
     },
