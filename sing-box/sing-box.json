@@ -277,17 +277,7 @@
       "outbounds": [
         "DIRECT",
         "PROXY",
-        "ALL",
-        "US",
-        "US AUTO",
-        "JP",
-        "JP AUTO",
-        "SG",
-        "SG AUTO",
-        "TW",
-        "TW AUTO",
-        "HK",
-        "HK AUTO"
+        "ALL"
       ],
       "default": "DIRECT"
     },
