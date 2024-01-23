@@ -171,7 +171,8 @@
       "outbounds": [
         "PROXY",
         "AUTO US",
-        "AUTO TW"
+        "AUTO TW",
+        "WARP"
       ],
       "default": "PROXY"
     },
