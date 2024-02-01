@@ -19,8 +19,6 @@ DOMAIN-SUFFIX,events-delivery.apple.com
 DOMAIN-SUFFIX,apple-events.akamaized.net
 DOMAIN-SUFFIX,p-events-delivery.akamaized.net
 # B
-# Buzzsprout
-DOMAIN-SUFFIX,buzzsprout.com
 # 哔嘀影视
 DOMAIN-SUFFIX,bdys.me
 DOMAIN-SUFFIX,bde4.cc
@@ -41,8 +39,6 @@ DOMAIN-SUFFIX,xzcs3zlph.com
 # D
 # E
 # F
-# Fireside
-DOMAIN-SUFFIX,fireside.fm
 # 返利网
 DOMAIN-SUFFIX,fanli.com
 DOMAIN-SUFFIX,51fanli.net
@@ -92,8 +88,6 @@ DOMAIN-SUFFIX,wavpub.com
 # T
 # The Weather Channel
 DOMAIN-SUFFIX,weather.com
-# Typlog
-DOMAIN-SUFFIX,typlog.com
 # U
 # V
 # W

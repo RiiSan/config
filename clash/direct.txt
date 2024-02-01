@@ -19,8 +19,6 @@
 +.apple-events.akamaized.net
 +.p-events-delivery.akamaized.net
 # B
-# Buzzsprout
-+.buzzsprout.com
 # 哔嘀影视
 +.bdys.me
 +.bde4.cc
@@ -41,8 +39,6 @@
 # D
 # E
 # F
-# Fireside
-+.fireside.fm
 # 返利网
 +.fanli.com
 +.51fanli.net
@@ -92,8 +88,6 @@ fonts.gstatic.com
 # T
 # The Weather Channel
 +.weather.com
-# Typlog
-+.typlog.com
 # U
 # V
 # W

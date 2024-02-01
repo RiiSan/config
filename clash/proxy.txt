@@ -20,6 +20,8 @@ itunes.apple.com
 # Bitwarden
 +.bitwarden.com
 +.bitwarden.net
+# Buzzsprout
++.buzzsprout.com
 # C
 # CCCAT
 +.cccat.io
@@ -59,6 +61,8 @@ clubhouseprod.s3.amazonaws.com
 +.theinitium.com
 # E
 # F
+# Fireside
++.fireside.fm
 # G
 # GitHub
 +.github.com
@@ -172,6 +176,8 @@ ntp.msn.com
 +.pscp.tv
 +.t.co
 +.twimg.com
+# Typlog
++.typlog.com
 # U
 # V
 # Vercel

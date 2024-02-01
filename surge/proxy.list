@@ -20,6 +20,8 @@ DOMAIN,itunes.apple.com
 # Bitwarden
 DOMAIN-SUFFIX,bitwarden.com
 DOMAIN-SUFFIX,bitwarden.net
+# Buzzsprout
+DOMAIN-SUFFIX,buzzsprout.com
 # C
 # CCCAT
 DOMAIN-SUFFIX,cccat.io
@@ -59,6 +61,8 @@ DOMAIN-SUFFIX,uhibo.com
 DOMAIN-SUFFIX,theinitium.com
 # E
 # F
+# Fireside
+DOMAIN-SUFFIX,fireside.fm
 # G
 # GitHub
 DOMAIN-SUFFIX,github.com
@@ -172,6 +176,8 @@ DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,twimg.com
+# Typlog
+DOMAIN-SUFFIX,typlog.com
 # U
 # V
 # Vercel
