@@ -19,6 +19,8 @@ DOMAIN-SUFFIX,events-delivery.apple.com
 DOMAIN-SUFFIX,apple-events.akamaized.net
 DOMAIN-SUFFIX,p-events-delivery.akamaized.net
 # B
+# Buzzsprout
+DOMAIN-SUFFIX,buzzsprout.com
 # 哔嘀影视
 DOMAIN-SUFFIX,bdys.me
 DOMAIN-SUFFIX,bde4.cc
