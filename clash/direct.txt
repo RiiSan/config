@@ -19,6 +19,8 @@
 +.apple-events.akamaized.net
 +.p-events-delivery.akamaized.net
 # B
+# Buzzsprout
++.buzzsprout.com
 # 哔嘀影视
 +.bdys.me
 +.bde4.cc
