@@ -170,9 +170,7 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "AUTO US",
-        "AUTO TW",
-        "WARP"
+        "AUTO TW"
       ],
       "default": "PROXY"
     },
