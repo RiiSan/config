@@ -3,6 +3,7 @@
 +.jsdelivr.net
 +.nameless13.com
 +.xeton.dev
++.19890604.day
 # A
 # ADSLCloud
 +.adsl.cloud
