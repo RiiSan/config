@@ -150,8 +150,7 @@
         "AUTO JP",
         "AUTO SG",
         "AUTO TW",
-        "AUTO HK",
-        "WARP"
+        "AUTO HK"
       ],
       "default": "AUTO US"
     },
@@ -171,7 +170,7 @@
       "outbounds": [
         "PROXY",
         "AUTO TW",
-        "WARP"
+        "AUTO HK"
       ],
       "default": "PROXY"
     },
@@ -216,20 +215,11 @@
       "tolerance": 50
     },
     {
-      "tag": "WARP",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
       "tag": "FINAL",
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "DIRECT",
-        "WARP"
+        "DIRECT"
       ],
       "default": "PROXY"
     },
@@ -238,8 +228,7 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "DIRECT",
-        "WARP"
+        "DIRECT"
       ],
       "default": "DIRECT"
     },
