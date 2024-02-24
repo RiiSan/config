@@ -158,9 +158,7 @@
       "tag": "OPENAI",
       "type": "selector",
       "outbounds": [
-        "PROXY",
-        "AUTO US",
-        "AUTO TW"
+        "PROXY"
       ],
       "default": "PROXY"
     },
@@ -169,8 +167,7 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "AUTO TW",
-        "AUTO HK"
+        "AUTO US"
       ],
       "default": "PROXY"
     },
