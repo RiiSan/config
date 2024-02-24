@@ -55,7 +55,9 @@ clubhouseprod.s3.amazonaws.com
 +.cboku.com
 +.gboku.com
 +.kboku.com
++.mdumo.com
 +.nboku.com
++.ndubo.com
 +.pboku.com
 +.uhibo.com
 # 端传媒
