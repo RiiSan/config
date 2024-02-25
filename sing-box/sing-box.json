@@ -167,7 +167,7 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "AUTO US"
+        "AUTO SG"
       ],
       "default": "PROXY"
     },
