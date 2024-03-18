@@ -169,7 +169,7 @@
         "PROXY",
         "AUTO SG"
       ],
-      "default": "PROXY"
+      "default": "AUTO SG"
     },
     {
       "tag": "AUTO US",
