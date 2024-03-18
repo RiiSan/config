@@ -75,7 +75,7 @@
       },
       {
         "rule_set": "binance",
-        "outbound": "AUTO SG"
+        "outbound": "CRYPTO"
       },
       {
         "rule_set": "spotify",
@@ -167,6 +167,16 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
+        "AUTO SG"
+      ],
+      "default": "AUTO SG"
+    },
+    {
+      "tag": "CRYPTO",
+      "type": "selector",
+      "outbounds": [
+        "PROXY",
+        "AUTO JP",
         "AUTO SG"
       ],
       "default": "AUTO SG"
