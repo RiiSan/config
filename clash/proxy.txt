@@ -4,7 +4,6 @@
 +.jsdelivr.net
 +.nameless13.com
 +.xeton.dev
-+.19890604.day
 # A
 # ADSLCloud
 +.adsl.cloud
@@ -41,10 +40,6 @@ clubhouseprod.s3.amazonaws.com
 # D
 # DeepL
 +.deepl.com
-# Dropbox
-+.dropbox.com
-+.dropboxapi.com
-+.dropboxstatic.com
 # 独播库
 +.duboku.tv
 +.duboku.co
@@ -61,41 +56,13 @@ clubhouseprod.s3.amazonaws.com
 +.ndubo.com
 +.pboku.com
 +.uhibo.com
-# 端传媒
-+.theinitium.com
 # E
 # F
 # Fireside
 +.fireside.fm
 # G
-# GitHub
-+.github.com
-+.github.io
-+.githubapp.com
-+.githubassets.com
-+.githubusercontent.com
-# Google
-+.google.com
-+.youtube.com
-+.ampproject.com
-+.ampproject.net
-+.ampproject.org
-+.ggpht.com
-+.gmail.com
-+.goo.gl
-+.google.co.jp
-+.google.com.hk
-+.googleapis.com
-+.googleusercontent.com
-+.googlevideo.com
-+.gvt1.com
-+.gvt2.com
-+.youtu.be
-+.ytimg.com
 # H
 # I
-# Inoreader
-+.inoreader.com
 # J
 # Jable.TV
 +.jable.tv
@@ -105,13 +72,6 @@ clubhouseprod.s3.amazonaws.com
 # K
 # L
 # M
-# Meta
-+.facebook.com
-+.instagram.com
-+.threads.net
-+.cdninstagram.com
-+.facebook.net
-+.fbcdn.net
 # Microsoft
 +.bing.com
 +.bing.net
@@ -126,19 +86,10 @@ ntp.msn.com
 +.mozilla.net
 +.mozilla.org
 # N
-# Netflix
-+.netflix.com
-+.fast.com
-+.nflxvideo.net
 # Notion
 +.notion.so
 +.notion.site
-# 纽约时报
-+.nytimes.com
-+.nyt.com
 # O
-# OpenAI
-+.openai.com
 # Overcast
 +.overcast.fm
 +.overcast-cdn.com
@@ -149,9 +100,6 @@ ntp.msn.com
 # P
 # Pocket Casts
 +.pocketcasts.com
-# Pornhub
-+.pornhub.com
-+.phncdn.com
 # ProtonMail
 +.proton.me
 +.pm.me
@@ -166,20 +114,8 @@ ntp.msn.com
 # Spark
 +.smartmailcloud.com
 # T
-# Telegram
-+.telegram.org
-+.t.me
-+.tdesktop.com
-+.telegra.ph
-+.telegram.me
 # TradingView
 +.tradingview.com
-# Twitter
-+.x.com
-+.twitter.com
-+.pscp.tv
-+.t.co
-+.twimg.com
 # Typlog
 +.typlog.com
 # U
@@ -187,17 +123,8 @@ ntp.msn.com
 # Vercel
 +.vercel.com
 +.vercel.app
-# VOA
-+.voanews.com
-+.voachinese.com
 # W
-# Wikipedia
-+.wikipedia.org
-+.wikimedia.org
 # X
-# Xvideos
-+.xvideos.com
-+.xvideos-cdn.com
 # 性价比机场
 +.xn--6nq44r2uh9rhj7f.com
 +.xn--xc3ao8r.top

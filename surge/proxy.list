@@ -4,7 +4,6 @@
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,nameless13.com
 DOMAIN-SUFFIX,xeton.dev
-DOMAIN-SUFFIX,19890604.day
 # A
 # ADSLCloud
 DOMAIN-SUFFIX,adsl.cloud
@@ -41,10 +40,6 @@ DOMAIN-SUFFIX,2000w.xyz
 # D
 # DeepL
 DOMAIN-SUFFIX,deepl.com
-# Dropbox
-DOMAIN-SUFFIX,dropbox.com
-DOMAIN-SUFFIX,dropboxapi.com
-DOMAIN-SUFFIX,dropboxstatic.com
 # 独播库
 DOMAIN-SUFFIX,duboku.tv
 DOMAIN-SUFFIX,duboku.co
@@ -61,41 +56,13 @@ DOMAIN-SUFFIX,nboku.com
 DOMAIN-SUFFIX,ndubo.com
 DOMAIN-SUFFIX,pboku.com
 DOMAIN-SUFFIX,uhibo.com
-# 端传媒
-DOMAIN-SUFFIX,theinitium.com
 # E
 # F
 # Fireside
 DOMAIN-SUFFIX,fireside.fm
 # G
-# GitHub
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubusercontent.com
-# Google
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ampproject.com
-DOMAIN-SUFFIX,ampproject.net
-DOMAIN-SUFFIX,ampproject.org
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,goo.gl
-DOMAIN-SUFFIX,google.co.jp
-DOMAIN-SUFFIX,google.com.hk
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,ytimg.com
 # H
 # I
-# Inoreader
-DOMAIN-SUFFIX,inoreader.com
 # J
 # Jable.TV
 DOMAIN-SUFFIX,jable.tv
@@ -105,13 +72,6 @@ DOMAIN-SUFFIX,jdbstatic.com
 # K
 # L
 # M
-# Meta
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,threads.net
-DOMAIN-SUFFIX,cdninstagram.com
-DOMAIN-SUFFIX,facebook.net
-DOMAIN-SUFFIX,fbcdn.net
 # Microsoft
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
@@ -126,19 +86,10 @@ DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.net
 DOMAIN-SUFFIX,mozilla.org
 # N
-# Netflix
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,fast.com
-DOMAIN-SUFFIX,nflxvideo.net
 # Notion
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,notion.site
-# 纽约时报
-DOMAIN-SUFFIX,nytimes.com
-DOMAIN-SUFFIX,nyt.com
 # O
-# OpenAI
-DOMAIN-SUFFIX,openai.com
 # Overcast
 DOMAIN-SUFFIX,overcast.fm
 DOMAIN-SUFFIX,overcast-cdn.com
@@ -149,9 +100,6 @@ DOMAIN-SUFFIX,olemovienews.com
 # P
 # Pocket Casts
 DOMAIN-SUFFIX,pocketcasts.com
-# Pornhub
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,phncdn.com
 # ProtonMail
 DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,pm.me
@@ -166,20 +114,8 @@ DOMAIN-SUFFIX,simperium.com
 # Spark
 DOMAIN-SUFFIX,smartmailcloud.com
 # T
-# Telegram
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,tdesktop.com
-DOMAIN-SUFFIX,telegra.ph
-DOMAIN-SUFFIX,telegram.me
 # TradingView
 DOMAIN-SUFFIX,tradingview.com
-# Twitter
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,pscp.tv
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,twimg.com
 # Typlog
 DOMAIN-SUFFIX,typlog.com
 # U
@@ -187,17 +123,8 @@ DOMAIN-SUFFIX,typlog.com
 # Vercel
 DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,vercel.app
-# VOA
-DOMAIN-SUFFIX,voanews.com
-DOMAIN-SUFFIX,voachinese.com
 # W
-# Wikipedia
-DOMAIN-SUFFIX,wikipedia.org
-DOMAIN-SUFFIX,wikimedia.org
 # X
-# Xvideos
-DOMAIN-SUFFIX,xvideos.com
-DOMAIN-SUFFIX,xvideos-cdn.com
 # 性价比机场
 DOMAIN-SUFFIX,xn--6nq44r2uh9rhj7f.com
 DOMAIN-SUFFIX,xn--xc3ao8r.top
