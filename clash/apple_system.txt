@@ -2,6 +2,7 @@
 # Surge Internal Ruleset SYSTEM
 # https://manual.nssurge.com/rule/ruleset.html
 # Includes rules for most requests sent by macOS and iOS itself. The requests sent by App Store, iTunes, and other content services are not included.
+
 # USER-AGENT,*com.apple.mobileme.fmip1
 # USER-AGENT,*WeatherFoundation*
 # USER-AGENT,%E5%9C%B0%E5%9B%BE*
