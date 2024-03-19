@@ -1,5 +1,5 @@
-#!name=Wi-Fi Access
-#!desc=Allow Wi-Fi Access
+#!name=Wi-Fi 访问
+#!desc=向 Wi-Fi 网络下的其他设备提供 HTTP/SOCKS5 代理服务器
 
 [General]
 allow-wifi-access = true

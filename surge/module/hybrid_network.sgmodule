@@ -1,5 +1,5 @@
-#!name=Hybrid Network
-#!desc=Set up connections with Wi-Fi and cellular data simultaneously
+#!name=混合网络
+#!desc=无论 Wi-Fi 信号如何，总是尝试并发使用 Wi-Fi 和数据网络建立连接
 #!system=ios
 
 [General]

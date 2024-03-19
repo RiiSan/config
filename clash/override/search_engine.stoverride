@@ -1,5 +1,7 @@
-name: Search Engine
-desc: Use Custom Search Engine in Safari
+name: 搜索引擎
+desc: 在 Safari 中使用自定义搜索引擎
+icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+
 http:
   mitm:
     - duckduckgo.com
