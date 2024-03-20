@@ -67,70 +67,70 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "geoip_cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "gfw",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "apple@cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "icloud@cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "binance",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "openai",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "spotify",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "geosite_telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       },
       {
         "tag": "geoip_telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
-        "download_detour": "PROXY"
+        "download_detour": "DIRECT"
       }
     ],
     "rules": [
@@ -331,7 +331,7 @@
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
       "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "PROXY"
+      "external_ui_download_detour": "DIRECT"
     },
     "cache_file": {
       "enabled": true,
