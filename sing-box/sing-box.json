@@ -158,7 +158,7 @@
       },
       {
         "clash_mode": "Global",
-        "outbound": "GLOBAL"
+        "outbound": "PROXY"
       },
       {
         "rule_set": "openai",
@@ -290,15 +290,6 @@
         "DIRECT"
       ],
       "default": "PROXY"
-    },
-    {
-      "tag": "GLOBAL",
-      "type": "selector",
-      "outbounds": [
-        "PROXY",
-        "DIRECT"
-      ],
-      "default": "DIRECT"
     },
     {
       "tag": "DIRECT",
