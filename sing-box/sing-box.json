@@ -45,8 +45,16 @@
         "rewrite_ttl": 1
       },
       {
-        "rule_set": "geosite_cn",
+        "rule_set": [
+          "geosite_cn",
+          "apple@cn",
+          "icloud@cn"
+        ],
         "server": "DNSPod"
+      },
+      {
+        "rule_set": "gfw",
+        "server": "EasyMosdns"
       }
     ],
     "final": "EasyMosdns",
@@ -76,6 +84,20 @@
         "download_detour": "PROXY"
       },
       {
+        "tag": "apple@cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "icloud@cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
+        "download_detour": "PROXY"
+      },
+      {
         "tag": "binance",
         "type": "remote",
         "format": "binary",
@@ -94,6 +116,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "geosite_telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
         "download_detour": "PROXY"
       },
       {
@@ -142,14 +171,25 @@
         "outbound": "PROXY"
       },
       {
-        "rule_set": "geoip_telegram",
-        "outbound": "TELEGRAM"
+        "rule_set": "geosite_cn",
+        "outbound": "DIRECT"
       },
       {
         "rule_set": [
-          "geosite_cn",
-          "geoip_cn"
+          "apple@cn",
+          "icloud@cn"
         ],
+        "outbound": "DIRECT"
+      },
+      {
+        "rule_set": [
+          "geosite_telegram",
+          "geoip_telegram"
+        ],
+        "outbound": "TELEGRAM"
+      },
+      {
+        "rule_set": "geoip_cn",
         "outbound": "DIRECT"
       }
     ],
