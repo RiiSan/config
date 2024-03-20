@@ -7,12 +7,13 @@
     },
     "servers": [
       {
-        "tag": "google_dns",
-        "address": "https://8.8.8.8/dns-query",
-        "detour": "PROXY"
+        "tag": "EasyMosdns",
+        "address": "https://doh.apad.pro/dns-query",
+        "address_resolver": "DNSPod",
+        "detour": "DIRECT"
       },
       {
-        "tag": "dnspod",
+        "tag": "DNSPod",
         "address": "https://1.12.12.12/dns-query",
         "detour": "DIRECT"
       },
@@ -24,12 +25,12 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "dnspod",
+        "server": "DNSPod",
         "disable_cache": true
       },
       {
         "clash_mode": "Direct",
-        "server": "dnspod"
+        "server": "DNSPod"
       },
       {
         "clash_mode": "Global",
@@ -45,10 +46,10 @@
       },
       {
         "rule_set": "geosite_cn",
-        "server": "dnspod"
+        "server": "DNSPod"
       }
     ],
-    "final": "google_dns",
+    "final": "EasyMosdns",
     "independent_cache": true
   },
   "route": {
@@ -104,6 +105,10 @@
       }
     ],
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
       {
         "port": 53,
         "outbound": "dns-out"
