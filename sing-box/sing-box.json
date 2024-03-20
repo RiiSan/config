@@ -7,7 +7,7 @@
     },
     "servers": [
       {
-        "tag": "googledns",
+        "tag": "google_dns",
         "address": "https://8.8.8.8/dns-query",
         "detour": "PROXY"
       },
@@ -44,14 +44,65 @@
         "rewrite_ttl": 1
       },
       {
-        "rule_set": "cn",
+        "rule_set": "geosite_cn",
         "server": "dnspod"
       }
     ],
-    "final": "googledns",
+    "final": "google_dns",
     "independent_cache": true
   },
   "route": {
+    "rule_set": [
+      {
+        "tag": "geosite_cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "geoip_cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "gfw",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "binance",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "openai",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "spotify",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "tag": "geoip_telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "download_detour": "PROXY"
+      }
+    ],
     "rules": [
       {
         "port": 53,
@@ -82,60 +133,19 @@
         "outbound": "AUTO US"
       },
       {
-        "rule_set": "telegram",
+        "rule_set": "gfw",
+        "outbound": "PROXY"
+      },
+      {
+        "rule_set": "geoip_telegram",
         "outbound": "TELEGRAM"
       },
       {
-        "rule_set": "cn",
+        "rule_set": [
+          "geosite_cn",
+          "geoip_cn"
+        ],
         "outbound": "DIRECT"
-      },
-      {
-        "rule_set": "geolocation-!cn",
-        "outbound": "PROXY"
-      }
-    ],
-    "rule_set": [
-      {
-        "tag": "cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/mixed/cn.srs",
-        "download_detour": "PROXY"
-      },
-      {
-        "tag": "geolocation-!cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "PROXY"
-      },
-      {
-        "tag": "binance",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/binance.srs",
-        "download_detour": "PROXY"
-      },
-      {
-        "tag": "openai",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "download_detour": "PROXY"
-      },
-      {
-        "tag": "spotify",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
-        "download_detour": "PROXY"
-      },
-      {
-        "tag": "telegram",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/mixed/telegram.srs",
-        "download_detour": "PROXY"
       }
     ],
     "final": "FINAL",
@@ -275,7 +285,7 @@
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "PROXY"
     },
     "cache_file": {
