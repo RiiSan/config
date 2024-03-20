@@ -18,7 +18,7 @@
         "detour": "DIRECT"
       },
       {
-        "tag": "fakeip",
+        "tag": "FakeIP",
         "address": "fakeip"
       }
     ],
@@ -34,14 +34,14 @@
       },
       {
         "clash_mode": "Global",
-        "server": "fakeip"
+        "server": "FakeIP"
       },
       {
         "query_type": [
           "A",
           "AAAA"
         ],
-        "server": "fakeip",
+        "server": "FakeIP",
         "rewrite_ttl": 1
       },
       {
@@ -53,8 +53,14 @@
         "server": "DNSPod"
       },
       {
-        "rule_set": "gfw",
-        "server": "EasyMosdns"
+        "rule_set": [
+          "gfw",
+          "binance",
+          "openai",
+          "spotify",
+          "telegram"
+        ],
+        "server": "FakeIP"
       }
     ],
     "final": "EasyMosdns",
@@ -119,14 +125,14 @@
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geosite_telegram",
+        "tag": "telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geoip_telegram",
+        "tag": "telegram_ip",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
@@ -183,8 +189,8 @@
       },
       {
         "rule_set": [
-          "geosite_telegram",
-          "geoip_telegram"
+          "telegram",
+          "telegram_ip"
         ],
         "outbound": "TELEGRAM"
       },
