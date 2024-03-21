@@ -161,6 +161,21 @@
         "outbound": "PROXY"
       },
       {
+        "package_name": "com.openai.chatgpt",
+        "outbound": "OPENAI"
+      },
+      {
+        "package_name": "com.spotify.music",
+        "outbound": "AUTO US"
+      },
+      {
+        "package_name": [
+          "org.telegram.messenger",
+          "xyz.nextalone.nagram"
+        ],
+        "outbound": "TELEGRAM"
+      },
+      {
         "rule_set": "openai",
         "outbound": "OPENAI"
       },
