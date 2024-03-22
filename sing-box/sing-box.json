@@ -1,373 +1,373 @@
 {
-    "dns": {
-        "fakeip": {
-            "enabled": true,
-            "inet4_range": "198.18.0.0/15",
-            "inet6_range": "fc00::/18"
-        },
-        "servers": [
-            {
-                "tag": "EasyMosdns",
-                "address": "https://doh.apad.pro/dns-query",
-                "address_resolver": "DNSPod",
-                "detour": "DIRECT"
-            },
-            {
-                "tag": "DNSPod",
-                "address": "https://1.12.12.12/dns-query",
-                "detour": "DIRECT"
-            },
-            {
-                "tag": "FakeIP",
-                "address": "fakeip"
-            }
-        ],
-        "rules": [
-            {
-                "outbound": "any",
-                "server": "DNSPod",
-                "disable_cache": true
-            },
-            {
-                "clash_mode": "Direct",
-                "server": "DNSPod"
-            },
-            {
-                "clash_mode": "Global",
-                "server": "FakeIP"
-            },
-            {
-                "query_type": [
-                    "A",
-                    "AAAA"
-                ],
-                "server": "FakeIP",
-                "rewrite_ttl": 1
-            },
-            {
-                "rule_set": [
-                    "direct",
-                    "geosite_cn",
-                    "apple@cn",
-                    "icloud@cn"
-                ],
-                "server": "DNSPod"
-            },
-            {
-                "rule_set": [
-                    "proxy",
-                    "gfw",
-                    "binance",
-                    "openai",
-                    "spotify"
-                ],
-                "server": "FakeIP"
-            }
-        ],
-        "final": "EasyMosdns",
-        "independent_cache": true
+  "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
     },
-    "route": {
+    "servers": [
+      {
+        "tag": "EasyMosdns",
+        "address": "https://doh.apad.pro/dns-query",
+        "address_resolver": "DNSPod",
+        "detour": "DIRECT"
+      },
+      {
+        "tag": "DNSPod",
+        "address": "https://1.12.12.12/dns-query",
+        "detour": "DIRECT"
+      },
+      {
+        "tag": "FakeIP",
+        "address": "fakeip"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "DNSPod",
+        "disable_cache": true
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "DNSPod"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "FakeIP"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "FakeIP",
+        "rewrite_ttl": 1
+      },
+      {
         "rule_set": [
-            {
-                "tag": "direct",
-                "type": "remote",
-                "format": "source",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/direct.json",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "proxy",
-                "type": "remote",
-                "format": "source",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/proxy.json",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "geosite_cn",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "geoip_cn",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "gfw",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "apple@cn",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "icloud@cn",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "binance",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "openai",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "spotify",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
-                "download_detour": "DIRECT"
-            },
-            {
-                "tag": "telegram_ip",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
-                "download_detour": "DIRECT"
-            }
+          "direct",
+          "geosite_cn",
+          "apple@cn",
+          "icloud@cn"
         ],
-        "rules": [
-            {
-                "protocol": "dns",
-                "outbound": "dns-out"
-            },
-            {
-                "port": 53,
-                "outbound": "dns-out"
-            },
-            {
-                "ip_is_private": true,
-                "outbound": "DIRECT"
-            },
-            {
-                "clash_mode": "Direct",
-                "outbound": "DIRECT"
-            },
-            {
-                "clash_mode": "Global",
-                "outbound": "PROXY"
-            },
-            {
-                "package_name": "com.openai.chatgpt",
-                "outbound": "OPENAI"
-            },
-            {
-                "package_name": "com.spotify.music",
-                "outbound": "AUTO US"
-            },
-            {
-                "package_name": "org.telegram.messenger",
-                "outbound": "TELEGRAM"
-            },
-            {
-                "package_name": "xyz.nextalone.nagram",
-                "outbound": "TELEGRAM"
-            },
-            {
-                "rule_set": "binance",
-                "outbound": "CRYPTO"
-            },
-            {
-                "rule_set": "openai",
-                "outbound": "OPENAI"
-            },
-            {
-                "rule_set": "spotify",
-                "outbound": "AUTO US"
-            },
-            {
-                "rule_set": "gfw",
-                "outbound": "PROXY"
-            },
-            {
-                "rule_set": "proxy",
-                "outbound": "PROXY"
-            },
-            {
-                "rule_set": "geosite_cn",
-                "outbound": "DIRECT"
-            },
-            {
-                "rule_set": [
-                    "apple@cn",
-                    "icloud@cn"
-                ],
-                "outbound": "DIRECT"
-            },
-            {
-                "rule_set": "direct",
-                "outbound": "DIRECT"
-            },
-            {
-                "rule_set": "telegram_ip",
-                "outbound": "TELEGRAM"
-            },
-            {
-                "rule_set": "geoip_cn",
-                "outbound": "DIRECT"
-            }
+        "server": "DNSPod"
+      },
+      {
+        "rule_set": [
+          "proxy",
+          "gfw",
+          "binance",
+          "openai",
+          "spotify"
         ],
-        "final": "FINAL",
-        "auto_detect_interface": true
-    },
-    "outbounds": [
-        {
-            "tag": "PROXY",
-            "type": "selector",
-            "outbounds": [
-                "AUTO US",
-                "AUTO JP",
-                "AUTO SG",
-                "AUTO TW",
-                "AUTO HK"
-            ],
-            "default": "AUTO US"
-        },
-        {
-            "tag": "OPENAI",
-            "type": "selector",
-            "outbounds": [
-                "PROXY"
-            ],
-            "default": "PROXY"
-        },
-        {
-            "tag": "TELEGRAM",
-            "type": "selector",
-            "outbounds": [
-                "PROXY",
-                "AUTO SG"
-            ],
-            "default": "AUTO SG"
-        },
-        {
-            "tag": "CRYPTO",
-            "type": "selector",
-            "outbounds": [
-                "PROXY",
-                "AUTO JP",
-                "AUTO SG"
-            ],
-            "default": "AUTO SG"
-        },
-        {
-            "tag": "AUTO US",
-            "type": "urltest",
-            "outbounds": [],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AUTO JP",
-            "type": "urltest",
-            "outbounds": [],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AUTO SG",
-            "type": "urltest",
-            "outbounds": [],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AUTO TW",
-            "type": "urltest",
-            "outbounds": [],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AUTO HK",
-            "type": "urltest",
-            "outbounds": [],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FINAL",
-            "type": "selector",
-            "outbounds": [
-                "PROXY",
-                "DIRECT"
-            ],
-            "default": "PROXY"
-        },
-        {
-            "tag": "DIRECT",
-            "type": "direct"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
-        }
+        "server": "FakeIP"
+      }
     ],
-    "inbounds": [
-        {
-            "type": "tun",
-            "inet4_address": "172.19.0.0/30",
-            "inet6_address": "fdfe:dcba:9876::0/126",
-            "stack": "system",
-            "auto_route": true,
-            "sniff": true,
-            "platform": {
-                "http_proxy": {
-                    "enabled": true,
-                    "server": "127.0.0.1",
-                    "server_port": 7890
-                }
-            }
-        },
-        {
-            "type": "mixed",
-            "listen": "127.0.0.1",
-            "listen_port": 7890,
-            "sniff": true
-        }
+    "final": "EasyMosdns",
+    "independent_cache": true
+  },
+  "route": {
+    "rule_set": [
+      {
+        "tag": "direct",
+        "type": "remote",
+        "format": "source",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/direct.json",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "proxy",
+        "type": "remote",
+        "format": "source",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/proxy.json",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "geosite_cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "geoip_cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "gfw",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "apple@cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "icloud@cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "binance",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "openai",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "spotify",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "telegram_ip",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "download_detour": "DIRECT"
+      }
     ],
-    "experimental": {
-        "clash_api": {
-            "external_controller": "0.0.0.0:9090",
-            "secret": "sing-box",
-            "external_ui": "ui",
-            "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-            "external_ui_download_detour": "DIRECT"
-        },
-        "cache_file": {
-            "enabled": true,
-            "store_fakeip": true
-        }
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "DIRECT"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "DIRECT"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "PROXY"
+      },
+      {
+        "package_name": "com.openai.chatgpt",
+        "outbound": "OPENAI"
+      },
+      {
+        "package_name": "com.spotify.music",
+        "outbound": "AUTO US"
+      },
+      {
+        "package_name": "org.telegram.messenger",
+        "outbound": "TELEGRAM"
+      },
+      {
+        "package_name": "xyz.nextalone.nagram",
+        "outbound": "TELEGRAM"
+      },
+      {
+        "rule_set": "binance",
+        "outbound": "CRYPTO"
+      },
+      {
+        "rule_set": "openai",
+        "outbound": "OPENAI"
+      },
+      {
+        "rule_set": "spotify",
+        "outbound": "AUTO US"
+      },
+      {
+        "rule_set": "gfw",
+        "outbound": "PROXY"
+      },
+      {
+        "rule_set": "proxy",
+        "outbound": "PROXY"
+      },
+      {
+        "rule_set": "geosite_cn",
+        "outbound": "DIRECT"
+      },
+      {
+        "rule_set": [
+          "apple@cn",
+          "icloud@cn"
+        ],
+        "outbound": "DIRECT"
+      },
+      {
+        "rule_set": "direct",
+        "outbound": "DIRECT"
+      },
+      {
+        "rule_set": "telegram_ip",
+        "outbound": "TELEGRAM"
+      },
+      {
+        "rule_set": "geoip_cn",
+        "outbound": "DIRECT"
+      }
+    ],
+    "final": "FINAL",
+    "auto_detect_interface": true
+  },
+  "outbounds": [
+    {
+      "tag": "PROXY",
+      "type": "selector",
+      "outbounds": [
+        "AUTO US",
+        "AUTO JP",
+        "AUTO SG",
+        "AUTO TW",
+        "AUTO HK"
+      ],
+      "default": "AUTO US"
     },
-    "log": {
-        "disabled": false,
-        "level": "info",
-        "timestamp": true
+    {
+      "tag": "OPENAI",
+      "type": "selector",
+      "outbounds": [
+        "PROXY"
+      ],
+      "default": "PROXY"
+    },
+    {
+      "tag": "TELEGRAM",
+      "type": "selector",
+      "outbounds": [
+        "PROXY",
+        "AUTO SG"
+      ],
+      "default": "AUTO SG"
+    },
+    {
+      "tag": "CRYPTO",
+      "type": "selector",
+      "outbounds": [
+        "PROXY",
+        "AUTO JP",
+        "AUTO SG"
+      ],
+      "default": "AUTO SG"
+    },
+    {
+      "tag": "AUTO US",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO JP",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO SG",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO TW",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "AUTO HK",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "FINAL",
+      "type": "selector",
+      "outbounds": [
+        "PROXY",
+        "DIRECT"
+      ],
+      "default": "PROXY"
+    },
+    {
+      "tag": "DIRECT",
+      "type": "direct"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
     }
+  ],
+  "inbounds": [
+    {
+      "type": "tun",
+      "inet4_address": "172.19.0.0/30",
+      "inet6_address": "fdfe:dcba:9876::0/126",
+      "stack": "system",
+      "auto_route": true,
+      "sniff": true,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      }
+    },
+    {
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 7890,
+      "sniff": true
+    }
+  ],
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "secret": "sing-box",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "DIRECT"
+    },
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true
+    }
+  },
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  }
 }
