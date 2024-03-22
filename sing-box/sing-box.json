@@ -141,13 +141,6 @@
                 "download_detour": "DIRECT"
             },
             {
-                "tag": "telegram",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
-                "download_detour": "DIRECT"
-            },
-            {
                 "tag": "telegram_ip",
                 "type": "remote",
                 "format": "binary",
@@ -185,19 +178,20 @@
                 "outbound": "AUTO US"
             },
             {
-                "package_name": [
-                    "org.telegram.messenger",
-                    "xyz.nextalone.nagram"
-                ],
+                "package_name": "org.telegram.messenger",
                 "outbound": "TELEGRAM"
             },
             {
-                "rule_set": "openai",
-                "outbound": "OPENAI"
+                "package_name": "xyz.nextalone.nagram",
+                "outbound": "TELEGRAM"
             },
             {
                 "rule_set": "binance",
                 "outbound": "CRYPTO"
+            },
+            {
+                "rule_set": "openai",
+                "outbound": "OPENAI"
             },
             {
                 "rule_set": "spotify",
@@ -227,10 +221,7 @@
                 "outbound": "DIRECT"
             },
             {
-                "rule_set": [
-                    "telegram",
-                    "telegram_ip"
-                ],
+                "rule_set": "telegram_ip",
                 "outbound": "TELEGRAM"
             },
             {
