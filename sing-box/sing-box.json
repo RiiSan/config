@@ -59,8 +59,7 @@
                     "gfw",
                     "binance",
                     "openai",
-                    "spotify",
-                    "telegram"
+                    "spotify"
                 ],
                 "server": "FakeIP"
             }
