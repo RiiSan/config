@@ -7,14 +7,20 @@
     },
     "servers": [
       {
-        "tag": "EasyMosdns",
-        "address": "https://doh.apad.pro/dns-query",
-        "address_resolver": "DNSPod",
+        "tag": "AliDNS",
+        "address": "https://223.5.5.5/dns-query",
         "detour": "DIRECT"
       },
       {
         "tag": "DNSPod",
-        "address": "https://1.12.12.12/dns-query",
+        "address": "https://doh.pub/dns-query",
+        "address_resolver": "AliDNS",
+        "detour": "DIRECT"
+      },
+      {
+        "tag": "EasyMosdns",
+        "address": "https://doh.apad.pro/dns-query",
+        "address_resolver": "AliDNS",
         "detour": "DIRECT"
       },
       {
@@ -47,19 +53,19 @@
       {
         "rule_set": [
           "direct",
-          "geosite_cn",
-          "apple@cn",
-          "icloud@cn"
+          "geosite-cn",
+          "geosite-apple-cn",
+          "geosite-icloud-cn"
         ],
         "server": "DNSPod"
       },
       {
         "rule_set": [
           "proxy",
-          "gfw",
-          "binance",
-          "openai",
-          "spotify"
+          "geosite-gfw",
+          "geosite-binance",
+          "geosite-openai",
+          "geosite-spotify"
         ],
         "server": "FakeIP"
       }
@@ -84,63 +90,63 @@
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geosite_cn",
+        "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geoip_cn",
+        "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "gfw",
+        "tag": "geosite-gfw",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "apple@cn",
+        "tag": "geosite-apple-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "icloud@cn",
+        "tag": "geosite-icloud-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "binance",
+        "tag": "geosite-binance",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "openai",
+        "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "spotify",
+        "tag": "geosite-spotify",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
         "download_detour": "DIRECT"
       },
       {
-        "tag": "telegram_ip",
+        "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
@@ -185,19 +191,19 @@
         "outbound": "TELEGRAM"
       },
       {
-        "rule_set": "binance",
+        "rule_set": "geosite-binance",
         "outbound": "CRYPTO"
       },
       {
-        "rule_set": "openai",
+        "rule_set": "geosite-openai",
         "outbound": "OPENAI"
       },
       {
-        "rule_set": "spotify",
+        "rule_set": "geosite-spotify",
         "outbound": "AUTO US"
       },
       {
-        "rule_set": "gfw",
+        "rule_set": "geosite-gfw",
         "outbound": "PROXY"
       },
       {
@@ -205,13 +211,13 @@
         "outbound": "PROXY"
       },
       {
-        "rule_set": "geosite_cn",
+        "rule_set": "geosite-cn",
         "outbound": "DIRECT"
       },
       {
         "rule_set": [
-          "apple@cn",
-          "icloud@cn"
+          "geosite-apple-cn",
+          "geosite-icloud-cn"
         ],
         "outbound": "DIRECT"
       },
@@ -220,11 +226,11 @@
         "outbound": "DIRECT"
       },
       {
-        "rule_set": "telegram_ip",
+        "rule_set": "geoip-telegram",
         "outbound": "TELEGRAM"
       },
       {
-        "rule_set": "geoip_cn",
+        "rule_set": "geoip-cn",
         "outbound": "DIRECT"
       }
     ],
