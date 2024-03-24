@@ -24,15 +24,32 @@
         "detour": "DIRECT"
       },
       {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      },
+      {
         "tag": "FakeIP",
         "address": "fakeip"
       }
     ],
     "rules": [
       {
-        "outbound": "any",
-        "server": "DNSPod",
+        "rule_set": "geosite-ads",
+        "server": "dns-block",
         "disable_cache": true
+      },
+      {
+        "rule_set": [
+          "direct",
+          "geosite-cn",
+          "geosite-apple-cn",
+          "geosite-icloud-cn"
+        ],
+        "server": "DNSPod"
+      },
+      {
+        "outbound": "any",
+        "server": "EasyMosdns"
       },
       {
         "clash_mode": "Direct",
@@ -49,25 +66,6 @@
         ],
         "server": "FakeIP",
         "rewrite_ttl": 1
-      },
-      {
-        "rule_set": [
-          "direct",
-          "geosite-cn",
-          "geosite-apple-cn",
-          "geosite-icloud-cn"
-        ],
-        "server": "DNSPod"
-      },
-      {
-        "rule_set": [
-          "proxy",
-          "geosite-gfw",
-          "geosite-binance",
-          "geosite-openai",
-          "geosite-spotify"
-        ],
-        "server": "FakeIP"
       }
     ],
     "final": "EasyMosdns",
@@ -101,6 +99,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "geosite-ads",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
         "download_detour": "DIRECT"
       },
       {
@@ -189,6 +194,10 @@
       {
         "package_name": "xyz.nextalone.nagram",
         "outbound": "TELEGRAM"
+      },
+      {
+        "rule_set": "geosite-ads",
+        "outbound": "REJECT"
       },
       {
         "rule_set": "geosite-binance",
@@ -331,6 +340,10 @@
       "type": "direct"
     },
     {
+      "tag": "REJECT",
+      "type": "block"
+    },
+    {
       "tag": "dns-out",
       "type": "dns"
     }
@@ -353,7 +366,7 @@
     },
     {
       "type": "mixed",
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "listen_port": 7890,
       "sniff": true
     }
