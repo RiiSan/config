@@ -282,7 +282,7 @@
       "tag": "AUTO US",
       "type": "urltest",
       "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
+      "url": "https://1.1.1.1/generate_204",
       "interval": "5m",
       "tolerance": 50
     },
@@ -290,7 +290,7 @@
       "tag": "AUTO JP",
       "type": "urltest",
       "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
+      "url": "https://1.1.1.1/generate_204",
       "interval": "5m",
       "tolerance": 50
     },
@@ -298,7 +298,7 @@
       "tag": "AUTO SG",
       "type": "urltest",
       "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
+      "url": "https://1.1.1.1/generate_204",
       "interval": "5m",
       "tolerance": 50
     },
@@ -306,7 +306,7 @@
       "tag": "AUTO TW",
       "type": "urltest",
       "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
+      "url": "https://1.1.1.1/generate_204",
       "interval": "5m",
       "tolerance": 50
     },
@@ -314,7 +314,7 @@
       "tag": "AUTO HK",
       "type": "urltest",
       "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
+      "url": "https://1.1.1.1/generate_204",
       "interval": "5m",
       "tolerance": 50
     },
