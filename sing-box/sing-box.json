@@ -35,7 +35,7 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "EasyMosdns"
+        "server": "AliDNS"
       },
       {
         "clash_mode": "Direct",
