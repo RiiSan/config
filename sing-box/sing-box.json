@@ -7,20 +7,14 @@
     },
     "servers": [
       {
-        "tag": "AliDNS",
-        "address": "https://223.5.5.5/dns-query",
-        "detour": "DIRECT"
-      },
-      {
         "tag": "DNSPod",
-        "address": "https://doh.pub/dns-query",
-        "address_resolver": "AliDNS",
+        "address": "https://1.12.12.12/dns-query",
         "detour": "DIRECT"
       },
       {
         "tag": "EasyMosdns",
         "address": "https://doh.apad.pro/dns-query",
-        "address_resolver": "AliDNS",
+        "address_resolver": "DNSPod",
         "detour": "DIRECT"
       },
       {
@@ -35,7 +29,7 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "AliDNS"
+        "server": "DNSPod"
       },
       {
         "clash_mode": "Direct",
