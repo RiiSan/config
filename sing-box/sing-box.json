@@ -39,15 +39,6 @@
         "disable_cache": true
       },
       {
-        "rule_set": [
-          "direct",
-          "geosite-cn",
-          "geosite-apple-cn",
-          "geosite-icloud-cn"
-        ],
-        "server": "DNSPod"
-      },
-      {
         "outbound": "any",
         "server": "EasyMosdns"
       },
@@ -57,6 +48,25 @@
       },
       {
         "clash_mode": "Global",
+        "server": "FakeIP"
+      },
+      {
+        "rule_set": [
+          "direct",
+          "geosite-cn",
+          "geosite-apple-cn",
+          "geosite-icloud-cn"
+        ],
+        "server": "DNSPod"
+      },
+      {
+        "rule_set": [
+          "proxy",
+          "geosite-gfw",
+          "geosite-binance",
+          "geosite-openai",
+          "geosite-spotify"
+        ],
         "server": "FakeIP"
       },
       {
@@ -88,13 +98,6 @@
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geosite-cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-        "download_detour": "DIRECT"
-      },
-      {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
@@ -109,10 +112,10 @@
         "download_detour": "DIRECT"
       },
       {
-        "tag": "geosite-gfw",
+        "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "download_detour": "DIRECT"
       },
       {
@@ -127,6 +130,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
+        "download_detour": "DIRECT"
+      },
+      {
+        "tag": "geosite-gfw",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
         "download_detour": "DIRECT"
       },
       {
