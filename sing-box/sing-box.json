@@ -34,11 +34,6 @@
     ],
     "rules": [
       {
-        "rule_set": "geosite-ads",
-        "server": "dns-block",
-        "disable_cache": true
-      },
-      {
         "outbound": "any",
         "server": "EasyMosdns"
       },
@@ -102,13 +97,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
         "download_detour": "DIRECT"
       },
       {
@@ -204,10 +192,6 @@
       {
         "package_name": "xyz.nextalone.nagram",
         "outbound": "TELEGRAM"
-      },
-      {
-        "rule_set": "geosite-ads",
-        "outbound": "REJECT"
       },
       {
         "rule_set": "geosite-binance",
