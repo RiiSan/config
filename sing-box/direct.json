@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "mirror.ghproxy.com",
         "fonts.gstatic.com"
       ],
       "domain_suffix": [

@@ -50,6 +50,8 @@ DOMAIN-SUFFIX,flyertrip.com
 # 粉笔
 DOMAIN-SUFFIX,fenbi.com
 # G
+# GitHub Proxy
+DOMAIN,mirror.ghproxy.com
 # Google
 DOMAIN,fonts.gstatic.com
 # H

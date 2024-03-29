@@ -50,6 +50,8 @@
 # 粉笔
 +.fenbi.com
 # G
+# GitHub Proxy
+mirror.ghproxy.com
 # Google
 fonts.gstatic.com
 # H
