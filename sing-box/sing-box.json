@@ -262,6 +262,7 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
+        "AUTO JP",
         "AUTO SG"
       ],
       "default": "AUTO SG",
