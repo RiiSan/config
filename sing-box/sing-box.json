@@ -177,7 +177,7 @@
       },
       {
         "package_name": "com.spotify.music",
-        "outbound": "AUTO US"
+        "outbound": "UNITED STATES"
       },
       {
         "package_name": "org.telegram.messenger",
@@ -197,7 +197,7 @@
       },
       {
         "rule_set": "geosite-spotify",
-        "outbound": "AUTO US"
+        "outbound": "UNITED STATES"
       },
       {
         "rule_set": "geosite-gfw",
@@ -239,13 +239,13 @@
       "tag": "PROXY",
       "type": "selector",
       "outbounds": [
-        "AUTO US",
-        "AUTO JP",
-        "AUTO SG",
-        "AUTO TW",
-        "AUTO HK"
+        "UNITED STATES",
+        "JAPAN",
+        "SINGAPORE",
+        "TAIWAN",
+        "HONG KONG"
       ],
-      "default": "AUTO US",
+      "default": "UNITED STATES",
       "interrupt_exist_connections": true
     },
     {
@@ -262,10 +262,10 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "AUTO JP",
-        "AUTO SG"
+        "JAPAN",
+        "SINGAPORE"
       ],
-      "default": "AUTO SG",
+      "default": "SINGAPORE",
       "interrupt_exist_connections": true
     },
     {
@@ -273,14 +273,14 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "AUTO JP",
-        "AUTO SG"
+        "JAPAN",
+        "SINGAPORE"
       ],
-      "default": "AUTO SG",
+      "default": "SINGAPORE",
       "interrupt_exist_connections": true
     },
     {
-      "tag": "AUTO US",
+      "tag": "UNITED STATES",
       "type": "urltest",
       "outbounds": [],
       "url": "https://1.1.1.1/generate_204",
@@ -288,7 +288,7 @@
       "tolerance": 50
     },
     {
-      "tag": "AUTO JP",
+      "tag": "JAPAN",
       "type": "urltest",
       "outbounds": [],
       "url": "https://1.1.1.1/generate_204",
@@ -296,7 +296,7 @@
       "tolerance": 50
     },
     {
-      "tag": "AUTO SG",
+      "tag": "SINGAPORE",
       "type": "urltest",
       "outbounds": [],
       "url": "https://1.1.1.1/generate_204",
@@ -304,7 +304,7 @@
       "tolerance": 50
     },
     {
-      "tag": "AUTO TW",
+      "tag": "TAIWAN",
       "type": "urltest",
       "outbounds": [],
       "url": "https://1.1.1.1/generate_204",
@@ -312,7 +312,7 @@
       "tolerance": 50
     },
     {
-      "tag": "AUTO HK",
+      "tag": "HONG KONG",
       "type": "urltest",
       "outbounds": [],
       "url": "https://1.1.1.1/generate_204",
