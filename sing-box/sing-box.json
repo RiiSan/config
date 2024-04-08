@@ -262,7 +262,6 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "JAPAN",
         "SINGAPORE"
       ],
       "default": "SINGAPORE",
@@ -273,7 +272,6 @@
       "type": "selector",
       "outbounds": [
         "PROXY",
-        "JAPAN",
         "SINGAPORE"
       ],
       "default": "SINGAPORE",
