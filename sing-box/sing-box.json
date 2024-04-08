@@ -188,6 +188,10 @@
         "outbound": "TELEGRAM"
       },
       {
+        "domain_keyword": "torrent",
+        "outbound": "PRIVATE"
+      },
+      {
         "rule_set": "geosite-binance",
         "outbound": "CRYPTO"
       },
@@ -276,6 +280,14 @@
       ],
       "default": "SINGAPORE",
       "interrupt_exist_connections": true
+    },
+    {
+      "tag": "PRIVATE",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://1.1.1.1/generate_204",
+      "interval": "5m",
+      "tolerance": 50
     },
     {
       "tag": "UNITED STATES",
