@@ -1,0 +1,65 @@
+{
+  "name": "Icon Set",
+  "icons": [
+    {
+      "name": "OpenAI",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/logo/openai.png"
+    },
+    {
+      "name": "Currency Exchange",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/currency-exchange.png"
+    },
+    {
+      "name": "Flag: Canada",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-canada.png"
+    },
+    {
+      "name": "Flag: China",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-china.png"
+    },
+    {
+      "name": "Flag: European Union",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-european-union.png"
+    },
+    {
+      "name": "Flag: Germany",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-germany.png"
+    },
+    {
+      "name": "Flag: Hong Kong",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-hong-kong-sar-china.png"
+    },
+    {
+      "name": "Flag: Japan",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-japan.png"
+    },
+    {
+      "name": "Flag: Macao",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-macao-sar-china.png"
+    },
+    {
+      "name": "Flag: Netherlands",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-netherlands.png"
+    },
+    {
+      "name": "Flag: Singapore",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-singapore.png"
+    },
+    {
+      "name": "Flag: Taiwan",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-taiwan.png"
+    },
+    {
+      "name": "Flag: United Kingdom",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-united-kingdom.png"
+    },
+    {
+      "name": "Flag: United States",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-united-states.png"
+    },
+    {
+      "name": "Flag: Vietnam",
+      "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/icon/toss-face_february-2022/flag-vietnam.png"
+    }
+  ]
+}
