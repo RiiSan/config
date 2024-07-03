@@ -2,6 +2,10 @@
   "name": "Icon Set",
   "icons": [
     {
+      "name": "Surge",
+      "url": "https://cdn.jsdelivr.net/gh/sub-store-org/Sub-Store-Front-End@master/src/assets/icons/surge_color.png"
+    },
+    {
       "name": "Sub Store",
       "url": "https://cdn.jsdelivr.net/gh/sub-store-org/Sub-Store-Front-End@master/src/assets/icons/logo-red.png"
     },
