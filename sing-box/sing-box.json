@@ -76,77 +76,77 @@
         "tag": "direct",
         "type": "remote",
         "format": "source",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/direct.json",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/direct.json",
         "download_detour": "DIRECT"
       },
       {
         "tag": "proxy",
         "type": "remote",
         "format": "source",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/proxy.json",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/proxy.json",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-apple-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-icloud-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-gfw",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-binance",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geosite-spotify",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
         "download_detour": "DIRECT"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
         "download_detour": "DIRECT"
       }
     ],
@@ -186,10 +186,6 @@
       {
         "package_name": "xyz.nextalone.nagram",
         "outbound": "TELEGRAM"
-      },
-      {
-        "domain_keyword": "torrent",
-        "outbound": "PRIVATE"
       },
       {
         "rule_set": "geosite-binance",
@@ -246,10 +242,19 @@
         "UNITED STATES",
         "JAPAN",
         "SINGAPORE",
-        "TAIWAN",
         "HONG KONG"
       ],
       "default": "UNITED STATES",
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "CRYPTO",
+      "type": "selector",
+      "outbounds": [
+        "PROXY",
+        "SINGAPORE"
+      ],
+      "default": "SINGAPORE",
       "interrupt_exist_connections": true
     },
     {
@@ -268,26 +273,8 @@
         "PROXY",
         "SINGAPORE"
       ],
-      "default": "SINGAPORE",
+      "default": "PROXY",
       "interrupt_exist_connections": true
-    },
-    {
-      "tag": "CRYPTO",
-      "type": "selector",
-      "outbounds": [
-        "PROXY",
-        "SINGAPORE"
-      ],
-      "default": "SINGAPORE",
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "PRIVATE",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
     },
     {
       "tag": "UNITED STATES",
@@ -307,14 +294,6 @@
     },
     {
       "tag": "SINGAPORE",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
-      "tag": "TAIWAN",
       "type": "urltest",
       "outbounds": [],
       "url": "https://1.1.1.1/generate_204",
@@ -380,7 +359,7 @@
       "external_controller": "0.0.0.0:9090",
       "secret": "",
       "external_ui": "ui",
-      "external_ui_download_url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_url": "https://ghp.ci/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
       "external_ui_download_detour": "DIRECT"
     },
     "cache_file": {
