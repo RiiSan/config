@@ -10,6 +10,8 @@
 +.2000w.xyz
 # CCCAT
 +.cccat.io
+# ADSLCloud
++.adsl.cloud
 # 性价比机场
 +.xingjiabijichang.com
 +.xn--6nq44r2uh9rhj7f.com
@@ -17,9 +19,6 @@
 
 # 1Password
 +.1password.com
-
-# ADSLCloud
-+.adsl.cloud
 
 # AICoin
 +.aicoin.com
@@ -91,6 +90,7 @@ ntp.msn.com
 
 # Pocket Casts
 +.pocketcasts.com
+
 # ProtonMail
 +.proton.me
 +.pm.me
@@ -100,11 +100,13 @@ ntp.msn.com
 # Simplenote
 +.simplenote.com
 +.simperium.com
+
 # Spark
 +.smartmailcloud.com
 
 # TradingView
 +.tradingview.com
+
 # Typlog
 +.typlog.com
 
