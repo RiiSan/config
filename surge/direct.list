@@ -1,12 +1,12 @@
 # Direct Ruleset
 
-# A
+# CN
+DOMAIN-SUFFIX,cn
+
 # AccuWeather
 DOMAIN-SUFFIX,accuweather.com
 DOMAIN-SUFFIX,weathercn.com
-# Anyway.FM
-DOMAIN-SUFFIX,anyway.fm
-DOMAIN-SUFFIX,anw.red
+
 # Apple
 DOMAIN-SUFFIX,iosapps.itunes.apple.com
 DOMAIN-SUFFIX,appldnld.apple.com
@@ -19,9 +19,20 @@ DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,events-delivery.apple.com
 DOMAIN-SUFFIX,apple-events.akamaized.net
 DOMAIN-SUFFIX,p-events-delivery.akamaized.net
-# B
+
+# Jable.TV Streaming
+DOMAIN-SUFFIX,mushroomtrack.com
+
+# Monotype
+DOMAIN-SUFFIX,fonts.com
+DOMAIN-SUFFIX,fonts.net
+
+# The Weather Channel
+DOMAIN-SUFFIX,weather.com
+
 # 哔嘀影视
 DOMAIN-SUFFIX,bdys.me
+DOMAIN-SUFFIX,xlys01.com
 DOMAIN-SUFFIX,52bdys.com
 DOMAIN-SUFFIX,bde4.cc
 DOMAIN-SUFFIX,bde4.com
@@ -39,80 +50,12 @@ DOMAIN-SUFFIX,topbuzzcdn.com
 DOMAIN-SUFFIX,toutiao50.com
 DOMAIN-SUFFIX,tripcdn.com
 DOMAIN-SUFFIX,xzcs3zlph.com
-# C
-# D
-# E
-# F
-# 返利网
-DOMAIN-SUFFIX,fanli.com
-DOMAIN-SUFFIX,51fanli.net
-# 飞客茶馆
-DOMAIN-SUFFIX,flyert.com
-DOMAIN-SUFFIX,flyertea.com
-DOMAIN-SUFFIX,flyertrip.com
-# 粉笔
-DOMAIN-SUFFIX,fenbi.com
-# G
-# GitHub Proxy
-DOMAIN,mirror.ghproxy.com
-# Google
-DOMAIN,fonts.gstatic.com
-# H
-# I
-# J
-# Jable.TV Streaming
-DOMAIN-SUFFIX,mushroomtrack.com
-# JustPod
-DOMAIN-SUFFIX,justpodmedia.com
-# 江西农信
-DOMAIN-SUFFIX,jxnxs.com
+
 # 津津乐道
 DOMAIN-SUFFIX,jjldbk.com
 DOMAIN-SUFFIX,dao.fm
 DOMAIN-SUFFIX,daopub.com
-# 九江银行
-DOMAIN-SUFFIX,jjccb.com
-# K
-# L
-# M
-# Monotype
-DOMAIN-SUFFIX,fonts.com
-DOMAIN-SUFFIX,fonts.net
-# N
-# O
-# P
-# Q
-# R
-# 瑞幸咖啡
-DOMAIN-SUFFIX,luckincoffee.com
-DOMAIN-SUFFIX,luckincoffeecdn.com
-DOMAIN-SUFFIX,lkcoffee.com
-# S
+
 # 声湃
 DOMAIN-SUFFIX,wav.pub
 DOMAIN-SUFFIX,wavpub.com
-# T
-# The Weather Channel
-DOMAIN-SUFFIX,weather.com
-# U
-# V
-# W
-# X
-# 小宇宙
-DOMAIN-SUFFIX,xiaoyuzhoufm.com
-DOMAIN-SUFFIX,getpodcast.xyz
-DOMAIN-SUFFIX,xyzcdn.net
-# 小众软件
-DOMAIN-SUFFIX,appinn.com
-DOMAIN-SUFFIX,appinn.net
-DOMAIN-SUFFIX,apprcn.com
-# 雪球
-DOMAIN-SUFFIX,xueqiu.com
-DOMAIN-SUFFIX,imedao.com
-DOMAIN-SUFFIX,rapidssl.com
-# Y
-# 异次元软件
-DOMAIN-SUFFIX,iplaysoft.com
-# Z
-# CN
-DOMAIN-SUFFIX,cn

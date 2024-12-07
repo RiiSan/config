@@ -4,42 +4,114 @@
 +.jsdelivr.net
 +.nameless13.com
 +.xeton.dev
-# A
+
+# Proxy Providers
+# CroLAX
++.2000w.xyz
+# CCCAT
++.cccat.io
+# 性价比机场
++.xingjiabijichang.com
++.xn--6nq44r2uh9rhj7f.com
++.xn--xc3ao8r.top
+
+# 1Password
++.1password.com
+
 # ADSLCloud
 +.adsl.cloud
+
 # AICoin
 +.aicoin.com
+
 # Apple ID (blackmatrix7)
 appleid.apple.com
 appleid.cdn-apple.com
 gsa.apple.com
 idmsa.apple.com
+
 # App Store (blackmatrix7)
 apps.apple.com
 itunes.apple.com
-# B
+
 # Bitwarden
 +.bitwarden.com
 +.bitwarden.net
+
 # Buzzsprout
 +.buzzsprout.com
-# C
-# CCCAT
-+.cccat.io
+
 # Clubhouse
 +.clubhouseapi.com
 +.join.club
 +.joinclubhouse.com
 clubhouseprod.s3.amazonaws.com
+
 # CoinGecko
 +.coingecko.com
+
 # CoinMarketCap
 +.coinmarketcap.com
-# CroLAX
-+.2000w.xyz
-# D
+
 # DeepL
 +.deepl.com
+
+# Fireside
++.fireside.fm
+
+# Jable.TV
++.jable.tv
+
+# JavDB
++.javdb.com
++.jdbstatic.com
+
+# Microsoft
++.bing.com
++.bing.net
++.bingapis.com
++.live.com
+copilot.microsoft.com
+edge.microsoft.com
+ntp.msn.com
+
+# Mozilla Firefox
++.firefox.com
++.mozilla.com
++.mozilla.net
++.mozilla.org
+
+# Notion
++.notion.so
++.notion.site
+
+# Overcast
++.overcast.fm
++.overcast-cdn.com
+
+# Pocket Casts
++.pocketcasts.com
+# ProtonMail
++.proton.me
++.pm.me
++.protonmail.ch
++.protonmail.com
+
+# Simplenote
++.simplenote.com
++.simperium.com
+# Spark
++.smartmailcloud.com
+
+# TradingView
++.tradingview.com
+# Typlog
++.typlog.com
+
+# Vercel
++.vercel.com
++.vercel.app
+
 # 独播库
 +.duboku.tv
 +.duboku.co
@@ -56,84 +128,13 @@ clubhouseprod.s3.amazonaws.com
 +.ndubo.com
 +.pboku.com
 +.uhibo.com
-# E
-# F
-# Fireside
-+.fireside.fm
-# G
-# H
-# I
-# J
-# Jable.TV
-+.jable.tv
-# JavDB
-+.javdb.com
-+.jdbstatic.com
-# K
-# L
-# M
-# Microsoft
-+.bing.com
-+.bing.net
-+.bingapis.com
-+.live.com
-copilot.microsoft.com
-edge.microsoft.com
-ntp.msn.com
-# Mozilla Firefox
-+.firefox.com
-+.mozilla.com
-+.mozilla.net
-+.mozilla.org
-# N
-# Notion
-+.notion.so
-+.notion.site
-# O
-# Overcast
-+.overcast.fm
-+.overcast-cdn.com
+
 # 欧乐影院
 +.olevod.tv
 +.olelive.com
 +.olemovienews.com
-# P
-# Pocket Casts
-+.pocketcasts.com
-# ProtonMail
-+.proton.me
-+.pm.me
-+.protonmail.ch
-+.protonmail.com
-# Q
-# R
-# S
-# Simplenote
-+.simplenote.com
-+.simperium.com
-# Spark
-+.smartmailcloud.com
-# T
-# TradingView
-+.tradingview.com
-# Typlog
-+.typlog.com
-# U
-# V
-# Vercel
-+.vercel.com
-+.vercel.app
-# W
-# X
-# 性价比机场
-+.xn--6nq44r2uh9rhj7f.com
-+.xn--xc3ao8r.top
-# Y
-# Z
+
 # 种子搜
 +.zhongziso.com
 +.zhongzidi.com
 +.zhongzilou.com
-# #
-# 1Password
-+.1password.com

@@ -1,12 +1,12 @@
 # Direct Ruleset
 
-# A
+# CN
++.cn
+
 # AccuWeather
 +.accuweather.com
 +.weathercn.com
-# Anyway.FM
-+.anyway.fm
-+.anw.red
+
 # Apple
 +.iosapps.itunes.apple.com
 +.appldnld.apple.com
@@ -19,9 +19,20 @@
 +.events-delivery.apple.com
 +.apple-events.akamaized.net
 +.p-events-delivery.akamaized.net
-# B
+
+# Jable.TV Streaming
++.mushroomtrack.com
+
+# Monotype
++.fonts.com
++.fonts.net
+
+# The Weather Channel
++.weather.com
+
 # 哔嘀影视
 +.bdys.me
++.xlys01.com
 +.52bdys.com
 +.bde4.cc
 +.bde4.com
@@ -39,80 +50,12 @@
 +.toutiao50.com
 +.tripcdn.com
 +.xzcs3zlph.com
-# C
-# D
-# E
-# F
-# 返利网
-+.fanli.com
-+.51fanli.net
-# 飞客茶馆
-+.flyert.com
-+.flyertea.com
-+.flyertrip.com
-# 粉笔
-+.fenbi.com
-# G
-# GitHub Proxy
-mirror.ghproxy.com
-# Google
-fonts.gstatic.com
-# H
-# I
-# J
-# Jable.TV Streaming
-+.mushroomtrack.com
-# JustPod
-+.justpodmedia.com
-# 江西农信
-+.jxnxs.com
+
 # 津津乐道
 +.jjldbk.com
 +.dao.fm
 +.daopub.com
-# 九江银行
-+.jjccb.com
-# K
-# L
-# M
-# Monotype
-+.fonts.com
-+.fonts.net
-# N
-# O
-# P
-# Q
-# R
-# 瑞幸咖啡
-+.luckincoffee.com
-+.luckincoffeecdn.com
-+.lkcoffee.com
-# S
+
 # 声湃
 +.wav.pub
 +.wavpub.com
-# T
-# The Weather Channel
-+.weather.com
-# U
-# V
-# W
-# X
-# 小宇宙
-+.xiaoyuzhoufm.com
-+.getpodcast.xyz
-+.xyzcdn.net
-# 小众软件
-+.appinn.com
-+.appinn.net
-+.apprcn.com
-# 雪球
-+.xueqiu.com
-+.imedao.com
-+.rapidssl.com
-# Y
-# 异次元软件
-+.iplaysoft.com
-# Z
-# CN
-+.cn

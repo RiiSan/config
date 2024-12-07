@@ -7,3 +7,4 @@
 [General]
 http-api = wdbuksvi@0.0.0.0:6171
 http-api-tls = false
+http-api-web-dashboard = true

@@ -3,3 +3,6 @@
 
 [General]
 allow-wifi-access = true
+allow-hotspot-access = true
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
