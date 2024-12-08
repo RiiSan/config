@@ -12,6 +12,8 @@
 +.cccat.io
 # ADSLCloud
 +.adsl.cloud
+# XQC
++.xqc.best
 # 性价比机场
 +.xingjiabijichang.com
 +.xn--6nq44r2uh9rhj7f.com
