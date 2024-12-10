@@ -4,6 +4,7 @@
 +.jsdelivr.net
 +.nameless13.com
 +.xeton.dev
++.metacubex.one
 
 # Proxy Providers
 # CroLAX
