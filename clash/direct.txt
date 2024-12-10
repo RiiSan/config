@@ -33,6 +33,7 @@
 # 哔嘀影视
 +.bdys.me
 +.xlys01.com
++.xlys.me
 +.52bdys.com
 +.bde4.cc
 +.bde4.com
@@ -50,6 +51,7 @@
 +.toutiao50.com
 +.tripcdn.com
 +.xzcs3zlph.com
++.xlys.cc.ua
 
 # 津津乐道
 +.jjldbk.com

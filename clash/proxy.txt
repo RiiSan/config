@@ -5,6 +5,7 @@
 +.nameless13.com
 +.xeton.dev
 +.metacubex.one
+metacubexd.pages.dev
 
 # Proxy Providers
 # CroLAX
@@ -104,8 +105,14 @@ ntp.msn.com
 +.simplenote.com
 +.simperium.com
 
+# sing-box
++.sagernet.org
+
 # Spark
 +.smartmailcloud.com
+
+# Surge
++.nssurge.com
 
 # TradingView
 +.tradingview.com
@@ -116,6 +123,12 @@ ntp.msn.com
 # Vercel
 +.vercel.com
 +.vercel.app
+
+# 磁力狗
++.clgclg.com
+
+# 磁力猫
++.clmclm.com
 
 # 独播库
 +.duboku.tv

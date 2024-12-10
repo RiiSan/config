@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,nameless13.com
 DOMAIN-SUFFIX,xeton.dev
 DOMAIN-SUFFIX,metacubex.one
+DOMAIN,metacubexd.pages.dev
 
 # Proxy Providers
 # CroLAX
@@ -104,8 +105,14 @@ DOMAIN-SUFFIX,protonmail.com
 DOMAIN-SUFFIX,simplenote.com
 DOMAIN-SUFFIX,simperium.com
 
+# sing-box
+DOMAIN-SUFFIX,sagernet.org
+
 # Spark
 DOMAIN-SUFFIX,smartmailcloud.com
+
+# Surge
+DOMAIN-SUFFIX,nssurge.com
 
 # TradingView
 DOMAIN-SUFFIX,tradingview.com
@@ -116,6 +123,12 @@ DOMAIN-SUFFIX,typlog.com
 # Vercel
 DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,vercel.app
+
+# 磁力狗
+DOMAIN-SUFFIX,clgclg.com
+
+# 磁力猫
+DOMAIN-SUFFIX,clmclm.com
 
 # 独播库
 DOMAIN-SUFFIX,duboku.tv

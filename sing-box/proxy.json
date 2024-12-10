@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "metacubexd.pages.dev",
         "appleid.apple.com",
         "appleid.cdn-apple.com",
         "gsa.apple.com",
@@ -60,11 +61,15 @@
         "protonmail.com",
         "simplenote.com",
         "simperium.com",
+        "sagernet.org",
         "smartmailcloud.com",
+        "nssurge.com",
         "tradingview.com",
         "typlog.com",
         "vercel.com",
         "vercel.app",
+        "clgclg.com",
+        "clmclm.com",
         "duboku.tv",
         "duboku.co",
         "duboku.com",
