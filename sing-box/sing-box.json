@@ -1,375 +1,98 @@
 {
+  "log":{"disabled":false,"level":"debug","timestamp":true},
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
+    "fakeip": {"enabled":true,"inet4_range":"198.18.0.0/15","inet6_range":"fc00::/18"},
     "servers": [
-      {
-        "tag": "DNSPod",
-        "address": "https://1.12.12.12/dns-query",
-        "detour": "DIRECT"
-      },
-      {
-        "tag": "EasyMosdns",
-        "address": "https://doh.apad.pro/dns-query",
-        "address_resolver": "DNSPod",
-        "detour": "DIRECT"
-      },
-      {
-        "tag": "dns-block",
-        "address": "rcode://success"
-      },
-      {
-        "tag": "FakeIP",
-        "address": "fakeip"
-      }
+      {"tag":"DNSPod","address":"https://1.12.12.12/dns-query","detour":"DIRECT"},
+      {"tag":"EasyMosdns","address":"https://doh.apad.pro/dns-query","address_resolver":"DNSPod","detour":"DIRECT"},
+      {"tag":"dns-block","address":"rcode://success"},
+      {"tag":"FakeIP","address":"fakeip"}
     ],
     "rules": [
-      {
-        "outbound": "any",
-        "server": "DNSPod"
-      },
-      {
-        "clash_mode": "Direct",
-        "server": "DNSPod"
-      },
-      {
-        "clash_mode": "Global",
-        "server": "FakeIP"
-      },
-      {
-        "rule_set": [
-          "direct",
-          "geosite-cn",
-          "geosite-apple-cn",
-          "geosite-icloud-cn"
-        ],
-        "server": "DNSPod"
-      },
-      {
-        "rule_set": [
-          "proxy",
-          "geosite-gfw",
-          "geosite-binance",
-          "geosite-openai",
-          "geosite-spotify"
-        ],
-        "server": "FakeIP"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "FakeIP",
-        "rewrite_ttl": 1
-      }
+      {"outbound":"any","server":"DNSPod"},
+      {"clash_mode":"Direct","server":"DNSPod"},
+      {"clash_mode":"Global","server":"FakeIP"},
+      {"rule_set":["direct","geosite-cn","geosite-apple-cn","geosite-icloud-cn"],"server":"DNSPod"},
+      {"rule_set":["proxy","geosite-gfw","geosite-binance","geosite-openai","geosite-spotify"],"server":"FakeIP"},
+      {"query_type":["A","AAAA"],"server":"FakeIP","rewrite_ttl":1}
     ],
     "final": "EasyMosdns",
     "independent_cache": true
   },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": ["172.19.0.0/30","fdfe:dcba:9876::0/126"],
+      "stack": "system",
+      "auto_route": true,
+      "auto_redirect":true,
+      "sniff": true,
+      "platform": {"http_proxy":{"enabled":true,"server":"127.0.0.1","server_port":7890}}
+    },
+    {"type":"mixed","listen":"::","listen_port":7890,"sniff":true}
+  ],
+  "outbounds": [
+    {"tag":"PROXY","type":"selector","outbounds":["UNITED STATES","JAPAN","SINGAPORE","HONG KONG"],"default":"UNITED STATES","interrupt_exist_connections":true},
+    {"tag":"CRYPTO","type":"selector","outbounds":["PROXY","SINGAPORE"],"default":"SINGAPORE","interrupt_exist_connections":true},
+    {"tag":"EMBY","type":"selector","outbounds":["PROXY","DIRECT"],"default":"PROXY","interrupt_exist_connections":true},
+    {"tag":"OPENAI","type":"selector","outbounds":["PROXY"],"default":"PROXY","interrupt_exist_connections":true},
+    {"tag":"TELEGRAM","type":"selector","outbounds":["PROXY","SINGAPORE"],"default":"PROXY","interrupt_exist_connections":true},
+    {"tag":"UNITED STATES","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
+    {"tag":"JAPAN","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
+    {"tag":"SINGAPORE","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
+    {"tag":"HONG KONG","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
+    {"tag":"FINAL","type":"selector","outbounds":["PROXY","DIRECT"],"default":"PROXY","interrupt_exist_connections":true},
+    {"tag":"DIRECT","type":"direct"},
+    {"tag":"REJECT","type":"block"},
+    {"tag":"DNS-OUT","type":"dns"}
+  ],
   "route": {
-    "rule_set": [
-      {
-        "tag": "direct",
-        "type": "remote",
-        "format": "source",
-        "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/sing-box/direct.json",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "proxy",
-        "type": "remote",
-        "format": "source",
-        "url": "https://cdn.jsdelivr.net/gh/RiiSan/config@main/sing-box/proxy.json",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geoip-cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-apple-cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple@cn.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-icloud-cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/icloud@cn.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-gfw",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/gfw.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-binance",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/binance.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-openai",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geosite-spotify",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
-        "download_detour": "DIRECT"
-      },
-      {
-        "tag": "geoip-telegram",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs",
-        "download_detour": "DIRECT"
-      }
-    ],
     "rules": [
-      {
-        "protocol": "dns",
-        "outbound": "dns-out"
-      },
-      {
-        "port": 53,
-        "outbound": "dns-out"
-      },
-      {
-        "ip_is_private": true,
-        "outbound": "DIRECT"
-      },
-      {
-        "clash_mode": "Direct",
-        "outbound": "DIRECT"
-      },
-      {
-        "clash_mode": "Global",
-        "outbound": "PROXY"
-      },
-      {
-        "package_name": "com.openai.chatgpt",
-        "outbound": "OPENAI"
-      },
-      {
-        "package_name": "com.spotify.music",
-        "outbound": "UNITED STATES"
-      },
-      {
-        "package_name": "org.telegram.messenger",
-        "outbound": "TELEGRAM"
-      },
-      {
-        "package_name": "xyz.nextalone.nagram",
-        "outbound": "TELEGRAM"
-      },
-      {
-        "rule_set": "geosite-binance",
-        "outbound": "CRYPTO"
-      },
-      {
-        "rule_set": "geosite-openai",
-        "outbound": "OPENAI"
-      },
-      {
-        "rule_set": "geosite-spotify",
-        "outbound": "UNITED STATES"
-      },
-      {
-        "rule_set": "geosite-gfw",
-        "outbound": "PROXY"
-      },
-      {
-        "rule_set": "proxy",
-        "outbound": "PROXY"
-      },
-      {
-        "rule_set": "geosite-cn",
-        "outbound": "DIRECT"
-      },
-      {
-        "rule_set": [
-          "geosite-apple-cn",
-          "geosite-icloud-cn"
-        ],
-        "outbound": "DIRECT"
-      },
-      {
-        "rule_set": "direct",
-        "outbound": "DIRECT"
-      },
-      {
-        "rule_set": "geoip-telegram",
-        "outbound": "TELEGRAM"
-      },
-      {
-        "rule_set": "geoip-cn",
-        "outbound": "DIRECT"
-      }
+      {"protocol":"dns","outbound":"DNS-OUT"},
+      {"port":53,"outbound":"DNS-OUT"},
+      {"ip_is_private": true,"outbound":"DIRECT"},
+      {"clash_mode":"Direct","outbound":"DIRECT"},
+      {"clash_mode":"Global","outbound":"PROXY"},
+      {"package_name":"com.openai.chatgpt","outbound":"OPENAI"},
+      {"package_name":"com.spotify.music","outbound":"UNITED STATES"},
+      {"package_name":"com.hush.yamby","outbound":"EMBY"},
+      {"package_name":"org.telegram.messenger","outbound":"TELEGRAM"},
+      {"package_name":"xyz.nextalone.nagram","outbound":"TELEGRAM"},
+      {"rule_set":"geosite-binance","outbound":"CRYPTO"},
+      {"rule_set":"geosite-openai","outbound":"OPENAI"},
+      {"rule_set":"geosite-spotify","outbound":"UNITED STATES"},
+      {"rule_set":"geosite-gfw","outbound":"PROXY"},
+      {"rule_set":"proxy","outbound":"PROXY"},
+      {"rule_set":"geosite-cn","outbound":"DIRECT"},
+      {"rule_set":["geosite-apple-cn","geosite-icloud-cn"],"outbound": "DIRECT"},
+      {"rule_set":"direct","outbound":"DIRECT"},
+      {"rule_set":"geoip-telegram","outbound":"TELEGRAM"},
+      {"rule_set":"geoip-cn","outbound":"DIRECT"}
+    ],
+    "rule_set": [
+      {"tag":"direct","format":"source","url":"https://fastly.jsdelivr.net/gh/RiiSan/config@main/sing-box/direct.json","type":"remote","download_detour":"DIRECT"},
+      {"tag":"proxy","format":"source","url":"https://fastly.jsdelivr.net/gh/RiiSan/config@main/sing-box/proxy.json","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geoip-cn","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-cn","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-apple-cn","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple@cn.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-icloud-cn","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/icloud@cn.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-gfw","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/gfw.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-binance","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/binance.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-openai","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geosite-spotify","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs","type":"remote","download_detour":"DIRECT"},
+      {"tag":"geoip-telegram","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs","type":"remote","download_detour":"DIRECT"}
     ],
     "final": "FINAL",
     "auto_detect_interface": true
   },
-  "outbounds": [
-    {
-      "tag": "PROXY",
-      "type": "selector",
-      "outbounds": [
-        "UNITED STATES",
-        "JAPAN",
-        "SINGAPORE",
-        "HONG KONG"
-      ],
-      "default": "UNITED STATES",
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "CRYPTO",
-      "type": "selector",
-      "outbounds": [
-        "PROXY",
-        "SINGAPORE"
-      ],
-      "default": "SINGAPORE",
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "OPENAI",
-      "type": "selector",
-      "outbounds": [
-        "PROXY"
-      ],
-      "default": "PROXY",
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "TELEGRAM",
-      "type": "selector",
-      "outbounds": [
-        "PROXY",
-        "SINGAPORE"
-      ],
-      "default": "PROXY",
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "UNITED STATES",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
-      "tag": "JAPAN",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
-      "tag": "SINGAPORE",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
-      "tag": "HONG KONG",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://1.1.1.1/generate_204",
-      "interval": "5m",
-      "tolerance": 50
-    },
-    {
-      "tag": "FINAL",
-      "type": "selector",
-      "outbounds": [
-        "PROXY",
-        "DIRECT"
-      ],
-      "default": "PROXY",
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "DIRECT",
-      "type": "direct"
-    },
-    {
-      "tag": "REJECT",
-      "type": "block"
-    },
-    {
-      "tag": "dns-out",
-      "type": "dns"
-    }
-  ],
-  "inbounds": [
-    {
-      "type": "tun",
-      "inet4_address": "172.19.0.0/30",
-      "inet6_address": "fdfe:dcba:9876::0/126",
-      "stack": "system",
-      "auto_route": true,
-      "sniff": true,
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 7890
-        }
-      }
-    },
-    {
-      "type": "mixed",
-      "listen": "::",
-      "listen_port": 7890,
-      "sniff": true
-    }
-  ],
   "experimental": {
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "secret": "",
       "external_ui": "ui",
-      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour": "PROXY"
+      "external_ui_download_url": "https://fastly.jsdelivr.net/gh/RiiSan/config@main/sing-box/dashboard/Yacd-meta-gh-pages.zip",
+      "external_ui_download_detour": "DIRECT"
     },
-    "cache_file": {
-      "enabled": true,
-      "store_fakeip": true
-    }
-  },
-  "log": {
-    "disabled": false,
-    "level": "debug",
-    "timestamp": true
+    "cache_file": {"enabled":true,"store_fakeip":true}
   }
 }
