@@ -32,6 +32,9 @@
     {"type":"mixed","listen":"::","listen_port":7890,"sniff":true}
   ],
   "outbounds":[
+    {"tag":"DNS-OUT","type":"dns"},
+    {"tag":"DIRECT","type":"direct"},
+    {"tag":"REJECT","type":"block"},
     {"tag":"PROXY","type":"selector","outbounds":["UNITED STATES","JAPAN","SINGAPORE","HONG KONG"],"default":"UNITED STATES","interrupt_exist_connections":true},
     {"tag":"CRYPTO","type":"selector","outbounds":["PROXY","SINGAPORE"],"default":"SINGAPORE","interrupt_exist_connections":true},
     {"tag":"EMBY","type":"selector","outbounds":["PROXY","DIRECT"],"default":"PROXY","interrupt_exist_connections":true},
@@ -41,10 +44,7 @@
     {"tag":"JAPAN","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
     {"tag":"SINGAPORE","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
     {"tag":"HONG KONG","type":"urltest","outbounds":[],"url":"https://1.1.1.1/generate_204","interval":"5m","tolerance":50},
-    {"tag":"FINAL","type":"selector","outbounds":["PROXY","DIRECT"],"default":"PROXY","interrupt_exist_connections":true},
-    {"tag":"DIRECT","type":"direct"},
-    {"tag":"REJECT","type":"block"},
-    {"tag":"DNS-OUT","type":"dns"}
+    {"tag":"FINAL","type":"selector","outbounds":["PROXY","DIRECT"],"default":"PROXY","interrupt_exist_connections":true}
   ],
   "route":{
     "rules":[
