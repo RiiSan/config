@@ -12,6 +12,7 @@
       {"outbound":"any","server":"DNSPod"},
       {"clash_mode":"Direct","server":"DNSPod"},
       {"clash_mode":"Global","server":"FakeIP"},
+      {"domain_suffix":["github.com","githubusercontent.com","jsdelivr.net"],"server":"EasyMosdns"},
       {"rule_set":["Direct List","GeoSite/CN","GeoSite/Apple-CN","GeoSite/iCloud-CN"],"server":"DNSPod"},
       {"rule_set":["Proxy List","GeoSite/GFW","GeoSite/Binance","GeoSite/Openai","GeoSite/Spotify"],"server":"FakeIP"},
       {"query_type":["A","AAAA"],"server":"FakeIP","rewrite_ttl":1}
@@ -34,7 +35,7 @@
     {"tag":"DNS-OUT","type":"dns"},
     {"tag":"DIRECT","type":"direct"},
     {"tag":"REJECT","type":"block"},
-    {"tag":"PROXY","type":"selector","outbounds":["UNITED STATES","JAPAN","SINGAPORE","HONG KONG"],"default":"UNITED STATES","interrupt_exist_connections":true},
+    {"tag":"PROXY","type":"selector","outbounds":["UNITED STATES","JAPAN","SINGAPORE","HONG KONG"],"default":"SINGAPORE","interrupt_exist_connections":true},
     {"tag":"CRYPTO","type":"selector","outbounds":["PROXY","SINGAPORE"],"default":"SINGAPORE","interrupt_exist_connections":true},
     {"tag":"EMBY","type":"selector","outbounds":["PROXY","DIRECT"],"default":"PROXY","interrupt_exist_connections":true},
     {"tag":"OPENAI","type":"selector","outbounds":["PROXY"],"default":"PROXY","interrupt_exist_connections":true},
@@ -69,17 +70,17 @@
       {"rule_set":"GeoIP/CN","outbound":"DIRECT"}
     ],
     "rule_set":[
-      {"tag":"Direct List","format":"source","url":"https://ghp.ci/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/direct.json","type":"remote","download_detour":"DIRECT"},
-      {"tag":"Proxy List","format":"source","url":"https://ghp.ci/https://raw.githubusercontent.com/RiiSan/config/main/sing-box/proxy.json","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/Binance","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/binance.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/Openai","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/Spotify","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/GFW","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/CN","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/Apple-CN","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoSite/iCloud-CN","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoIP/Telegram","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs","type":"remote","download_detour":"DIRECT"},
-      {"tag":"GeoIP/CN","format":"binary","url":"https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs","type":"remote","download_detour":"DIRECT"}
+      {"tag":"Direct List","format":"source","url":"https://raw.githubusercontent.com/RiiSan/config/main/sing-box/direct.json","type":"remote","download_detour":"PROXY"},
+      {"tag":"Proxy List","format":"source","url":"https://raw.githubusercontent.com/RiiSan/config/main/sing-box/proxy.json","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/Binance","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/binance.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/Openai","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/Spotify","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/GFW","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/gfw.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/CN","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/Apple-CN","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple@cn.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoSite/iCloud-CN","format":"binary","url":"https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/icloud@cn.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoIP/Telegram","format":"binary","url":"https://fastly.jsdelivr.net/gh/Loyalsoldier/geoip@release/srs/telegram.srs","type":"remote","download_detour":"PROXY"},
+      {"tag":"GeoIP/CN","format":"binary","url":"https://fastly.jsdelivr.net/gh/Loyalsoldier/geoip@release/srs/cn.srs","type":"remote","download_detour":"PROXY"}
     ],
     "final":"FINAL",
     "auto_detect_interface":true
@@ -89,8 +90,8 @@
       "external_controller":"0.0.0.0:9090",
       "secret":"",
       "external_ui":"ui",
-      "external_ui_download_url":"https://ghp.ci/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour":"DIRECT"
+      "external_ui_download_url":"https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_detour":"PROXY"
     },
     "cache_file":{"enabled":true,"store_fakeip":true}
   }
