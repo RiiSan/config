@@ -8,14 +8,14 @@ DOMAIN-SUFFIX,metacubex.one
 DOMAIN,metacubexd.pages.dev
 
 # Proxy Providers
+# Surge Pro
+DOMAIN-SUFFIX,vocrx.com
 # CroLAX
 DOMAIN-SUFFIX,2000w.xyz
 # CCCAT
 DOMAIN-SUFFIX,cccat.io
 # ADSLCloud
 DOMAIN-SUFFIX,adsl.cloud
-# XQC
-DOMAIN-SUFFIX,xqc.best
 # 性价比机场
 DOMAIN-SUFFIX,xingjiabijichang.com
 DOMAIN-SUFFIX,xn--6nq44r2uh9rhj7f.com
