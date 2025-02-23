@@ -8,6 +8,7 @@
 +.weathercn.com
 
 # Apple
++.tv.apple.com
 +.iosapps.itunes.apple.com
 +.appldnld.apple.com
 +.cdn-apple.com

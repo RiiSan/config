@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,accuweather.com
 DOMAIN-SUFFIX,weathercn.com
 
 # Apple
+DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,iosapps.itunes.apple.com
 DOMAIN-SUFFIX,appldnld.apple.com
 DOMAIN-SUFFIX,cdn-apple.com
