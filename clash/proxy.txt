@@ -62,6 +62,9 @@ clubhouseprod.s3.amazonaws.com
 # Fireside
 +.fireside.fm
 
+# Google
++.googleapis.cn
+
 # Jable.TV
 +.jable.tv
 

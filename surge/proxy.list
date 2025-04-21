@@ -62,6 +62,9 @@ DOMAIN-SUFFIX,deepl.com
 # Fireside
 DOMAIN-SUFFIX,fireside.fm
 
+# Google
+DOMAIN-SUFFIX,googleapis.cn
+
 # Jable.TV
 DOMAIN-SUFFIX,jable.tv
 
