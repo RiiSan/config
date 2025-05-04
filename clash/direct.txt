@@ -28,6 +28,9 @@
 +.fonts.com
 +.fonts.net
 
+# Tailscale
++.tailscale.com
+
 # The Weather Channel
 +.weather.com
 

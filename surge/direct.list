@@ -28,6 +28,9 @@ DOMAIN-SUFFIX,mushroomtrack.com
 DOMAIN-SUFFIX,fonts.com
 DOMAIN-SUFFIX,fonts.net
 
+# Tailscale
+DOMAIN-SUFFIX,tailscale.com
+
 # The Weather Channel
 DOMAIN-SUFFIX,weather.com
 
