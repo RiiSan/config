@@ -30,6 +30,7 @@
 
 # Tailscale
 +.tailscale.com
++.ts.net
 
 # The Weather Channel
 +.weather.com

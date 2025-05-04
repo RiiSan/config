@@ -30,6 +30,7 @@ DOMAIN-SUFFIX,fonts.net
 
 # Tailscale
 DOMAIN-SUFFIX,tailscale.com
+DOMAIN-SUFFIX,ts.net
 
 # The Weather Channel
 DOMAIN-SUFFIX,weather.com
