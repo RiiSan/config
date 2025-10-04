@@ -123,6 +123,9 @@ DOMAIN-SUFFIX,tradingview.com
 # Typlog
 DOMAIN-SUFFIX,typlog.com
 
+# Unsplash
+DOMAIN-SUFFIX,unsplash.com
+
 # Vercel
 DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,vercel.app

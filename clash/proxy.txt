@@ -123,6 +123,9 @@ ntp.msn.com
 # Typlog
 +.typlog.com
 
+# Unsplash
++.unsplash.com
+
 # Vercel
 +.vercel.com
 +.vercel.app
