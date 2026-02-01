@@ -21,6 +21,10 @@
 # Jable.TV Streaming
 +.mushroomtrack.com
 
+# Microsoft
++.sharepoint.com
++.sharepointonline.com
+
 # Monotype
 +.fonts.com
 +.fonts.net

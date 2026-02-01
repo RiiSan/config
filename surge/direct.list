@@ -21,6 +21,10 @@ DOMAIN-SUFFIX,p-events-delivery.akamaized.net
 # Jable.TV Streaming
 DOMAIN-SUFFIX,mushroomtrack.com
 
+# Microsoft
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+
 # Monotype
 DOMAIN-SUFFIX,fonts.com
 DOMAIN-SUFFIX,fonts.net
