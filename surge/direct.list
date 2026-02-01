@@ -1,8 +1,5 @@
 # Direct Ruleset
 
-# CN
-DOMAIN-SUFFIX,cn
-
 # AccuWeather
 DOMAIN-SUFFIX,accuweather.com
 DOMAIN-SUFFIX,weathercn.com

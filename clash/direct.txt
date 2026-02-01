@@ -1,8 +1,5 @@
 # Direct Ruleset
 
-# CN
-+.cn
-
 # AccuWeather
 +.accuweather.com
 +.weathercn.com
