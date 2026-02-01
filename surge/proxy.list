@@ -27,16 +27,6 @@ DOMAIN-SUFFIX,1password.com
 # AICoin
 DOMAIN-SUFFIX,aicoin.com
 
-# Apple ID (blackmatrix7)
-DOMAIN,appleid.apple.com
-DOMAIN,appleid.cdn-apple.com
-DOMAIN,gsa.apple.com
-DOMAIN,idmsa.apple.com
-
-# App Store (blackmatrix7)
-DOMAIN,apps.apple.com
-DOMAIN,itunes.apple.com
-
 # Bitwarden
 DOMAIN-SUFFIX,bitwarden.com
 DOMAIN-SUFFIX,bitwarden.net
@@ -81,28 +71,12 @@ DOMAIN,copilot.microsoft.com
 DOMAIN,edge.microsoft.com
 DOMAIN,ntp.msn.com
 
-# Mozilla Firefox
-DOMAIN-SUFFIX,firefox.com
-DOMAIN-SUFFIX,mozilla.com
-DOMAIN-SUFFIX,mozilla.net
-DOMAIN-SUFFIX,mozilla.org
-
-# Notion
-DOMAIN-SUFFIX,notion.so
-DOMAIN-SUFFIX,notion.site
-
 # Overcast
 DOMAIN-SUFFIX,overcast.fm
 DOMAIN-SUFFIX,overcast-cdn.com
 
 # Pocket Casts
 DOMAIN-SUFFIX,pocketcasts.com
-
-# ProtonMail
-DOMAIN-SUFFIX,proton.me
-DOMAIN-SUFFIX,pm.me
-DOMAIN-SUFFIX,protonmail.ch
-DOMAIN-SUFFIX,protonmail.com
 
 # Simplenote
 DOMAIN-SUFFIX,simplenote.com
