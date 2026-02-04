@@ -24,6 +24,7 @@
 # Microsoft
 +.sharepoint.com
 +.sharepointonline.com
++.microsoftpersonalcontent.com
 
 # Monotype
 +.fonts.com
