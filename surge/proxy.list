@@ -18,8 +18,12 @@ DOMAIN-SUFFIX,cccat.io
 DOMAIN-SUFFIX,adsl.cloud
 # 性价比机场
 DOMAIN-SUFFIX,xingjiabijichang.com
+DOMAIN-SUFFIX,proxyinfo.net
 DOMAIN-SUFFIX,xn--6nq44r2uh9rhj7f.com
 DOMAIN-SUFFIX,xn--xc3ao8r.top
+# 良心云
+DOMAIN-SUFFIX,liangxin.xyz
+DOMAIN-SUFFIX,xn--9kqz23b19z.com
 
 # 1Password
 DOMAIN-SUFFIX,1password.com

@@ -18,8 +18,12 @@ metacubexd.pages.dev
 +.adsl.cloud
 # 性价比机场
 +.xingjiabijichang.com
++.proxyinfo.net
 +.xn--6nq44r2uh9rhj7f.com
 +.xn--xc3ao8r.top
+# 良心云
++.liangxin.xyz
++.xn--9kqz23b19z.com
 
 # 1Password
 +.1password.com
