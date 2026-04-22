@@ -22,6 +22,7 @@
 +.mushroomtrack.com
 
 # Microsoft
+time.windows.com
 +.sharepoint.com
 +.sharepointonline.com
 +.microsoftpersonalcontent.com

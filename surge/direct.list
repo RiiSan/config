@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,p-events-delivery.akamaized.net
 DOMAIN-SUFFIX,mushroomtrack.com
 
 # Microsoft
+DOMAIN,time.windows.com
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-SUFFIX,microsoftpersonalcontent.com

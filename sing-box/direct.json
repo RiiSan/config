@@ -2,6 +2,9 @@
     "version": 3,
     "rules": [
         {
+            "domain": [
+                "time.windows.com"
+            ],
             "domain_suffix": [
                 "accuweather.com",
                 "weathercn.com",
